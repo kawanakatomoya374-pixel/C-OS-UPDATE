@@ -12,4 +12,4 @@ Nothing here is trusted just because it is here: C-OS accepts a manifest only if
 Do not edit by hand. Releases are made with `tools/release_update.py` and `tools/publish_pages.sh` of the C-OS source repository, which replace this repository's content with one
 commit (so the history does not grow with every release).
 
-Pages: Settings > Pages > Deploy from a branch > `main` / (root).
+
