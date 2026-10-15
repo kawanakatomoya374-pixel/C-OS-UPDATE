@@ -1,5 +1,7 @@
 COSUP 1
 channel stable
-serial 1792074637
+serial 1792077282
+os version=4.0.9-r1 notes=First_update_a_new_sample_program
+item name=HelloUpdate version=1 path=/apps/samples/hello_update.c-os sha256=c5552916497abe618c378deb93c39de948d7c131da0146a7d9d750bcfec84afe size=108656 file=HelloUpdate-1.bin
 --SIG--
-96b25109f648c34da441dba4627f83b24ea717c918e65fa9f21d64f9c61fadd09ddaebe46d9c8fb2e6aec8d7630cf3d2e05fc91eee8169386a84cc7e1531a95b
+8c21c57c772fb793049f88857d15a6b1d79284f4a1630b4785223e9ec0f29d296e4f95e2681c0fc5f14e4ad9021e907ccae8abbd99f3dc309dd74bedf76d489c
