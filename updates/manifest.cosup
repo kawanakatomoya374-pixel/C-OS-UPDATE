@@ -1,8 +1,8 @@
 COSUP 1
 channel stable
-serial 1792134047
-os version=4.0.9-r2 notes=Craft_3D_game_SMP_rendering_native_full_screen_F12
+serial 1792139065
+os version=4.0.9-r3 notes=Fix_for_other_CPU_cores_on_CPUs_without_SMAP_Craft
 item name=HelloUpdate version=1 path=/apps/samples/hello_update.c-os sha256=c5552916497abe618c378deb93c39de948d7c131da0146a7d9d750bcfec84afe size=108656 file=HelloUpdate-1.bin
-kernel serial=1792133972 sha256=14fccb698ea7aa9ee0a2a7540921f39a8bcee0a849c4b4df9162d1779d7713a7 size=28850006 parts=4 file=Kernel-1792133972 label=4.0.9-r2_Craft
+kernel serial=1792138746 sha256=b5666fd2961327c8db794671c9306f42912fbd7f0e55c1898c498e8310de5934 size=28850133 parts=4 file=Kernel-1792138746 label=4.0.9-r3
 --SIG--
-d8d0ca92c107a8fb23a1e3f318905bb6d3f0b32c941d540100437a5cc1363623838f23c8cd7e6cd8d5f202f25ba1b5952c9b64d8de1668c5f8f16cba69951bf9
+e9c831543462b2cd513a2868059f5e5597f982d324f03215c2133347bd11c0e7adc59f6701bcd7a7aeb55db68034fd4887a165a2f25170bf805c9bea1b816464
