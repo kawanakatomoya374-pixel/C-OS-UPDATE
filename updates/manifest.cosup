@@ -1,8 +1,8 @@
 COSUP 1
 channel stable
-serial 1792141509
-os version=4.0.9-r4 notes=Craft:_multiplayer_(/online),_less_per-frame_overhead,_faster_present
+serial 1792144033
+os version=4.0.9-r5 notes=Messenger:_+_opens_the_File_Manager_to_pick_files,_drag_and_drop_between_windows_and_onto_the_desktop,_desktop_rubber-band_selection
 item name=HelloUpdate version=1 path=/apps/samples/hello_update.c-os sha256=c5552916497abe618c378deb93c39de948d7c131da0146a7d9d750bcfec84afe size=108656 file=HelloUpdate-1.bin
-kernel serial=1792141487 sha256=de94f64da6e9265a96a3e7976cd0a0acd9590684a4dcf1d0d2807ee3fa240d15 size=28852044 parts=4 file=Kernel-1792141487 label=Craft_full_features_+_optimisation
+kernel serial=1792143844 sha256=48cbc165faeb7622522a9677c6ca9cb1d1655363e5634e692989947b018765a9 size=28858924 parts=4 file=Kernel-1792143844 label=Messenger_file_picker,_drag_and_drop,_rubber_band
 --SIG--
-67ed10a2a66e2a658ce40901c3fcd336578316b02791b22fc866b3d2805d8bd6dd46fc3ba3eed0cd185b438c619189e7db26631908b6df1563c51c5dd81d8e55
+cf276931ce93bdc04d51a5d02c83dfdf236b935ff541fbcf394bebdc35d891a2bbe3c66ddab479c8b4eac3d7cfe8f27f8cb991bac753c2f7495dad550c822e66
