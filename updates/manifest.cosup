@@ -1,8 +1,8 @@
 COSUP 1
 channel stable
-serial 1792397294
-os version=4.0.9-r7 notes=Launcher_(Craft_+_mc-classic-c,_16_Classic_versions_with_sound),_icon_renamed_from_Craft
-item name=Terminal version=1 path=/bin/Terminal.c-os sha256=a90cc13664e98fa3a14d61de67e02cb52c7ca22caf4defc137c44fe0c8a227a2 size=369832 file=Terminal-1.bin
+serial 1792416174
+os version=4.0.9-r8 notes=Linux_compatibility:_run_Linux_x86-64_programs_(static/dynamic_PIE_ELF)_with_threads,_pipes,_fork/exec,_signals,_sockets,_/proc_and_/dev._Tested_with_BusyBox,_ffmpeg,_curl,_jq.
+item name=Terminal version=2 path=/bin/Terminal.c-os sha256=93d555917c463cd29000ac2ec8388ed84a1ccb89881b4ba06a33627cfd593271 size=369832 file=Terminal-2.bin
 item name=Files version=1 path=/bin/files.c-os sha256=8aa5f407c6bdfaeee20586a2862d28a83153588e823ad9dd49862d5cba895984 size=391000 file=Files-1.bin
 item name=Py2C version=1 path=/bin/Py2C.c-os sha256=c5ecbd4d7ba2fda7568bd80050c379ff06ffa102160c72362bada2d5a289ca5f size=827736 file=Py2C-1.bin
 item name=TinyCC version=1 path=/bin/tcc.c-os sha256=e3e643503618db2de76cbc8876d5c794fd2ef2beb8f68d7f54e268bc3f20bfec size=446112 file=TinyCC-1.bin
@@ -14,6 +14,6 @@ item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2
 item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
 item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1792397258 sha256=8bfc031476e0a8e0d87cf12d0f1ba2cd817f3d7eafcd210a50a922bc5ac4bcc2 size=40137424 parts=5 file=Kernel-1792397258 label=4.0.9-r7_Launcher_and_mc-classic-c
+kernel serial=1792415929 sha256=9fe467d66fc431275c32cb953f5ba30f58fd7f9cd6704c0122cd77240e5cb886 size=40156390 parts=5 file=Kernel-1792415929 label=4.0.9-r8_Linux_compatibility
 --SIG--
-36af7ffbdd2e40e1ecdec6608bb3cffa3c8f15b64dee70216ced74769c41aa53e62e5f24c80988e97975ff690b51f66104309ec26968a53929005d4db09828e5
+72dc93baa0f54cc190fbc3c3ba9747bebbc76c04520b44842ed2df3fda6ffe07e0f4b2a6f77584035ee600dd1558b001577db29c4e688618adddb9c6bdda4ab8
