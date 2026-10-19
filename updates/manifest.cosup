@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1792416174
-os version=4.0.9-r8 notes=Linux_compatibility:_run_Linux_x86-64_programs_(static/dynamic_PIE_ELF)_with_threads,_pipes,_fork/exec,_signals,_sockets,_/proc_and_/dev._Tested_with_BusyBox,_ffmpeg,_curl,_jq.
+serial 1792434527
+os version=4.0.9-r8.1 notes=Clock_fix_(games_no_longer_run_in_slow_motion_under_load),_faster_Minecraft_renderer_with_adaptive_view_distance,_F10/F11_(quality,_full_screen),_Linux_compatibility:_IPv6,_/proc_and_/dev_listings,_Perl,_Python,_clone3_fix.
 item name=Terminal version=2 path=/bin/Terminal.c-os sha256=93d555917c463cd29000ac2ec8388ed84a1ccb89881b4ba06a33627cfd593271 size=369832 file=Terminal-2.bin
 item name=Files version=1 path=/bin/files.c-os sha256=8aa5f407c6bdfaeee20586a2862d28a83153588e823ad9dd49862d5cba895984 size=391000 file=Files-1.bin
 item name=Py2C version=1 path=/bin/Py2C.c-os sha256=c5ecbd4d7ba2fda7568bd80050c379ff06ffa102160c72362bada2d5a289ca5f size=827736 file=Py2C-1.bin
@@ -14,6 +14,6 @@ item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2
 item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
 item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1792415929 sha256=9fe467d66fc431275c32cb953f5ba30f58fd7f9cd6704c0122cd77240e5cb886 size=40156390 parts=5 file=Kernel-1792415929 label=4.0.9-r8_Linux_compatibility
+kernel serial=1792434430 sha256=6d9e8b978a543617b97b24a1988d6e52dd7c83969755bb7c0a399c7642e8637d size=40787543 parts=5 file=Kernel-1792434430 label=4.0.9-r8.1
 --SIG--
-72dc93baa0f54cc190fbc3c3ba9747bebbc76c04520b44842ed2df3fda6ffe07e0f4b2a6f77584035ee600dd1558b001577db29c4e688618adddb9c6bdda4ab8
+2f18b46bbe36eb9386f6249b9bc926f58db29fc099f4b43c77f7d9f0c69fc89ae769ccbbef1d075f19c589fb5284cfc072a88341da7bc9a55062f3e4e3cd6dc7
