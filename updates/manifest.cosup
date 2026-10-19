@@ -1,8 +1,19 @@
 COSUP 1
 channel stable
-serial 1792387675
-os version=4.0.9-r6 notes=Several_CPU_cores_run_programs_in_parallel,_POSIX_layer,_page_fault_log,_per-core_load_in_the_system_monitor
-item name=HelloUpdate version=1 path=/apps/samples/hello_update.c-os sha256=c5552916497abe618c378deb93c39de948d7c131da0146a7d9d750bcfec84afe size=108656 file=HelloUpdate-1.bin
-kernel serial=1792387084 sha256=ca98f742f397a9c91ed8d03be64a8956695062cd66fa972eb7b9889107d32110 size=28954640 parts=4 file=Kernel-1792387084 label=Multi-core_scheduler
+serial 1792397294
+os version=4.0.9-r7 notes=Launcher_(Craft_+_mc-classic-c,_16_Classic_versions_with_sound),_icon_renamed_from_Craft
+item name=Terminal version=1 path=/bin/Terminal.c-os sha256=a90cc13664e98fa3a14d61de67e02cb52c7ca22caf4defc137c44fe0c8a227a2 size=369832 file=Terminal-1.bin
+item name=Files version=1 path=/bin/files.c-os sha256=8aa5f407c6bdfaeee20586a2862d28a83153588e823ad9dd49862d5cba895984 size=391000 file=Files-1.bin
+item name=Py2C version=1 path=/bin/Py2C.c-os sha256=c5ecbd4d7ba2fda7568bd80050c379ff06ffa102160c72362bada2d5a289ca5f size=827736 file=Py2C-1.bin
+item name=TinyCC version=1 path=/bin/tcc.c-os sha256=e3e643503618db2de76cbc8876d5c794fd2ef2beb8f68d7f54e268bc3f20bfec size=446112 file=TinyCC-1.bin
+item name=Studio version=1 path=/bin/studio.c-os sha256=fd4ac5c23d857c7a89d56b7f26235ed4d423e9c2729e7fe3b918b14c8e22285a size=473184 file=Studio-1.bin
+item name=Music version=1 path=/bin/music.c-os sha256=7a6ce4f315b57f4c0425766149a3396ca4d5a1c0b293536b4b1bd4f22b1d2c89 size=290720 file=Music-1.bin
+item name=Media version=1 path=/bin/Media.c-os sha256=beecbb07b3d843f14a49d5517edd81b24b1e9b0319ab708f65ce9ea11c1cee01 size=6297264 file=Media-1.bin
+item name=Photo version=1 path=/bin/Photo.c-os sha256=2888c8ac892d543b013ab6756669d7342149d0df3c6ad42e8db3fecf18230128 size=193016 file=Photo-1.bin
+item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2af9cb1fe47b99a91b2f52ecad3aeda0b30ba1d042fc1 size=128672 file=Updater-1.bin
+item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
+item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
+item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
+kernel serial=1792397258 sha256=8bfc031476e0a8e0d87cf12d0f1ba2cd817f3d7eafcd210a50a922bc5ac4bcc2 size=40137424 parts=5 file=Kernel-1792397258 label=4.0.9-r7_Launcher_and_mc-classic-c
 --SIG--
-d9c40f28344fb199c38ae90e10b54eb5aeb1cfb6c9dcadd846cdabc79f25305b82fe2f03893c2ea4226be52305073376f5a7f3a4aa8172a3933a0de87e1a9022
+36af7ffbdd2e40e1ecdec6608bb3cffa3c8f15b64dee70216ced74769c41aa53e62e5f24c80988e97975ff690b51f66104309ec26968a53929005d4db09828e5
