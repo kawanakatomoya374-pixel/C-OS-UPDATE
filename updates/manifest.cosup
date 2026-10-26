@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793034507
-os version=4.0.9-r9 notes=SMP_fix_(-smp_N_as_N_sockets_and_multi-socket_machines:_all_CPUs_are_used),_Linux_apps_resolve_names_(DNS)_so_Firefox_reaches_sites,_faster_file_mapping_and_many_Linux_compatibility_fixes,_quieter_serial_log
+serial 1793041126
+os version=4.0.9-r10 notes=Linux_apps_resolve_names_(curl_and_Firefox_find_sites),_file_rename_and_lock_fixes_(for_localStorage,_not_yet_tested),_Firefox_speed_settings
 item name=Terminal version=2 path=/bin/Terminal.c-os sha256=93d555917c463cd29000ac2ec8388ed84a1ccb89881b4ba06a33627cfd593271 size=369832 file=Terminal-2.bin
 item name=Files version=1 path=/bin/files.c-os sha256=8aa5f407c6bdfaeee20586a2862d28a83153588e823ad9dd49862d5cba895984 size=391000 file=Files-1.bin
 item name=Py2C version=1 path=/bin/Py2C.c-os sha256=c5ecbd4d7ba2fda7568bd80050c379ff06ffa102160c72362bada2d5a289ca5f size=827736 file=Py2C-1.bin
@@ -14,6 +14,6 @@ item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2
 item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
 item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793034342 sha256=b336784620015c723abcf06d4a551e9d2e272d30f75b7ac5640355fa950c8f8e size=40917651 parts=5 file=Kernel-1793034342 label=4.0.9-r9
+kernel serial=1793041092 sha256=4b57945a175fa8df89a665fe0e81f706ee2d92214343b151c1d3a386d8e7a5d3 size=40916985 parts=5 file=Kernel-1793041092 label=4.0.9-r10
 --SIG--
-ba62b134b2e9d94a31d67415a79281640c5e9332ddbabc18717397b77a9164fb2b1b9fee60930e9e5ef685447481a0084eaa255ed334f9a276d6ce26d4d75c7b
+cd3a87b48ae0f6d887f40d5d9b9a6c8a25b6402cddbeece4ac20ce417c8233a211858fb1b40d5a96b221ab0b9fc45be9ff30f96e7bd5bd387b62796c044d9d7a
