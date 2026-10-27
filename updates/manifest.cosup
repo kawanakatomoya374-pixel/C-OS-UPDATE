@@ -1,20 +1,20 @@
 COSUP 1
 channel stable
-serial 1793113768
-os version=4.1.0-r17 notes=Taskbar_vertical_battery_icon_with_five_level_lines_and_percent_(ACPI)_memory_shown_as_used/total_MB
-item name=Terminal version=4 path=/bin/Terminal.c-os sha256=13f6c1e816597507f846884b05248bdb18f52d3aa2737c9a08ccbc05026e0098 size=370032 file=Terminal-4.bin
-item name=Files version=4 path=/bin/files.c-os sha256=71bd88be011453192b2ac0c358b7674a42fd0031fd04aaa48832b7db2395ebf1 size=404144 file=Files-4.bin
-item name=Py2C version=3 path=/bin/Py2C.c-os sha256=737083bdbecd3ce526822d78e581fde21fc6f0e873b36e3dc733d44a520df367 size=827888 file=Py2C-3.bin
-item name=TinyCC version=1 path=/bin/tcc.c-os sha256=e3e643503618db2de76cbc8876d5c794fd2ef2beb8f68d7f54e268bc3f20bfec size=446112 file=TinyCC-1.bin
-item name=Archive version=2 path=/bin/cosarc.c-os sha256=ecca816a7318af4ae78e6a36a69fd034fc403eb81dd03eeaff504f20d4eded99 size=130640 file=Archive-2.bin
-item name=Studio version=1 path=/bin/studio.c-os sha256=fd4ac5c23d857c7a89d56b7f26235ed4d423e9c2729e7fe3b918b14c8e22285a size=473184 file=Studio-1.bin
-item name=Music version=1 path=/bin/music.c-os sha256=7a6ce4f315b57f4c0425766149a3396ca4d5a1c0b293536b4b1bd4f22b1d2c89 size=290720 file=Music-1.bin
-item name=Media version=1 path=/bin/Media.c-os sha256=beecbb07b3d843f14a49d5517edd81b24b1e9b0319ab708f65ce9ea11c1cee01 size=6297264 file=Media-1.bin
-item name=Photo version=1 path=/bin/Photo.c-os sha256=2888c8ac892d543b013ab6756669d7342149d0df3c6ad42e8db3fecf18230128 size=193016 file=Photo-1.bin
-item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2af9cb1fe47b99a91b2f52ecad3aeda0b30ba1d042fc1 size=128672 file=Updater-1.bin
-item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
-item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
+serial 1793137857
+os version=4.1.0-r18 notes=Faster_Linux_programs_(SYSCALL_instruction_8-page_fault-around_AVX2)_update_fix_(restart_confirms_the_new_kernel_Download_the_update_again_button)_screenshots_as_PNG_JPG_WebP_BMP_faster_file_drop_to_Firefox_quieter_serial_log_profiling_additions
+item name=Terminal version=5 path=/bin/Terminal.c-os sha256=e29317105fe3e9f4ec70b31ce32043f91cde2e8e6517d7fee0b85e32e646c82f size=370080 file=Terminal-5.bin
+item name=Files version=5 path=/bin/files.c-os sha256=2a1c60702ca190bbf0e139781a69381a1a2d51fb96f94db8a481863edb80b657 size=404200 file=Files-5.bin
+item name=Py2C version=4 path=/bin/Py2C.c-os sha256=404d27675df62e85a7b84bee3ac0dff8597915ccff220c6f92687268762f7882 size=827944 file=Py2C-4.bin
+item name=TinyCC version=2 path=/bin/tcc.c-os sha256=d1d7df7da1f4f6dad1049ba1d5cc7b0c1c055e5930ab9d59ce39551fb116cca6 size=446160 file=TinyCC-2.bin
+item name=Archive version=3 path=/bin/cosarc.c-os sha256=a09d115d5c35f188501bdc0954efb73b9bd9ba09741d524b51253a2c645aa48c size=130696 file=Archive-3.bin
+item name=Studio version=2 path=/bin/studio.c-os sha256=79901a067bbc6a6690726d2e061f0d7e516896e6ddace6eb4eb30c63d6b1bc1a size=473240 file=Studio-2.bin
+item name=Music version=2 path=/bin/music.c-os sha256=923f59e69333f0f4c100fa7f6b6fc95c5f4557a5239569c76492df641ef81e6e size=290768 file=Music-2.bin
+item name=Media version=2 path=/bin/Media.c-os sha256=8d2acd4fcbec1c81010b18854b628389caa02171730b2f6f26ae9239fc118536 size=6297320 file=Media-2.bin
+item name=Photo version=2 path=/bin/Photo.c-os sha256=5af3585462b662c418f78a77edba754dcca721abc3777b357428f3a7e7bad448 size=193072 file=Photo-2.bin
+item name=Updater version=2 path=/bin/cosupdate.c-os sha256=627497cf2d84b881405a6678c2fe736f963da3dafe00f42e8380ca4a5cf96c61 size=128760 file=Updater-2.bin
+item name=MessageServer version=2 path=/bin/CosMsgServer.c-os sha256=711a06263c8f03bfb0af2aa7e4b40c6dd422ec2ea73a08d1cfb2368065056474 size=423312 file=MessageServer-2.bin
+item name=Py2CCli version=2 path=/bin/python-code-to-c.c-os sha256=3d1ac0c5e41670fde0e0f0b30e048fa2c5e02c1fedcff47c9b43c3daab23eaa3 size=933728 file=Py2CCli-2.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793113738 sha256=89306f54b94439cdff051fa4c24e36001be06be53823e4faaf09501ead815b7a size=41305064 parts=5 file=Kernel-1793113738 label=C-OS_4.1.0-r17
+kernel serial=1793137557 sha256=d41730ad5f4e931999e3c186b14988f16e8bfc0bf466cf0c9535b97fdee04546 size=41320566 parts=5 file=Kernel-1793137557 label=C-OS_4.1.0-r18
 --SIG--
-f9ca2ae9ff5decabb49de8b8f55e6be13bb39b82ffabecfc249a15afc1614aa7e8c24ad7f9e8a46223e9c3fb851fdc2be09317d50102596f0a79138ce87f9731
+dc6a01e71cf6827a48db7dc1b594e3bf29cdbe9eebc222263cb087bcfc9e6871a91e879a8692dd3e6b6acee42a2f0e0b6828a58a797f8d4e9b5bb4e4680128fd
