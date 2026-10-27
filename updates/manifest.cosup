@@ -1,12 +1,12 @@
 COSUP 1
 channel stable
-serial 1793103912
-os version=4.1.0-r15 notes=Error_window_with_error_code,_not-responding_panel_(wait/end),_panic_screen,_scheduler_fix_(a_looping_program_no_longer_freezes_the_desktop),_Ctrl+Shift+J_for_Japanese_input
+serial 1793111849
+os version=4.1.0-r16 notes=Full_screen_and_maximize_without_black_margin_(F11_and_app_windows)_Linux_window_manager_cos-wm_file_upload_to_Firefox_(/cos_bookmarks_File_Manager_drag_and_drop)_NetSurf_download_progress_window_progress_bar_and_cancel_for_archives
 item name=Terminal version=4 path=/bin/Terminal.c-os sha256=13f6c1e816597507f846884b05248bdb18f52d3aa2737c9a08ccbc05026e0098 size=370032 file=Terminal-4.bin
-item name=Files version=3 path=/bin/files.c-os sha256=2cbe0b635dc13263de151468fe9738f2758a5c4fdc155e415161d3098514b06a size=399920 file=Files-3.bin
+item name=Files version=4 path=/bin/files.c-os sha256=71bd88be011453192b2ac0c358b7674a42fd0031fd04aaa48832b7db2395ebf1 size=404144 file=Files-4.bin
 item name=Py2C version=3 path=/bin/Py2C.c-os sha256=737083bdbecd3ce526822d78e581fde21fc6f0e873b36e3dc733d44a520df367 size=827888 file=Py2C-3.bin
 item name=TinyCC version=1 path=/bin/tcc.c-os sha256=e3e643503618db2de76cbc8876d5c794fd2ef2beb8f68d7f54e268bc3f20bfec size=446112 file=TinyCC-1.bin
-item name=Archive version=1 path=/bin/cosarc.c-os sha256=b49fe6b507930b2e330de49f0e7f11b04a5c5ac823fad2ae324832bbb60dc656 size=126160 file=Archive-1.bin
+item name=Archive version=2 path=/bin/cosarc.c-os sha256=ecca816a7318af4ae78e6a36a69fd034fc403eb81dd03eeaff504f20d4eded99 size=130640 file=Archive-2.bin
 item name=Studio version=1 path=/bin/studio.c-os sha256=fd4ac5c23d857c7a89d56b7f26235ed4d423e9c2729e7fe3b918b14c8e22285a size=473184 file=Studio-1.bin
 item name=Music version=1 path=/bin/music.c-os sha256=7a6ce4f315b57f4c0425766149a3396ca4d5a1c0b293536b4b1bd4f22b1d2c89 size=290720 file=Music-1.bin
 item name=Media version=1 path=/bin/Media.c-os sha256=beecbb07b3d843f14a49d5517edd81b24b1e9b0319ab708f65ce9ea11c1cee01 size=6297264 file=Media-1.bin
@@ -15,6 +15,6 @@ item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2
 item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
 item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793103574 sha256=ad624ecc0f6c9192780e114a8c7d77e3d91c67bda1adf55b25ab6b426677a99e size=41201011 parts=5 file=Kernel-1793103574 label=4.1.0-r15:_error_window,_not_responding,_panic_screen,_scheduler_fix
+kernel serial=1793111745 sha256=f4b9852902c294216de95864b2d927296b62ffde0a0dbb622816bca1f0ec26ee size=41303019 parts=5 file=Kernel-1793111745 label=C-OS_4.1.0-r16
 --SIG--
-7917c9f84ab39262acad0647075b0b7284c1df9552dc9410b980955a8f7e6f94f61cd8d851fbbe2c8838c2ea9817035f3d24cdf6ff60a33c943c2b04c25b66c0
+fba92d06730fd2c78d7a8824c234793ad512b7de8aace87aefe8de9f42a67395b399d4824350edaa3d3c18b2d994a4e5b940d7f5cea6c8e096e552eceb413fe6
