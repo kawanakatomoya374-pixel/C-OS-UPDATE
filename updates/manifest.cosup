@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793111849
-os version=4.1.0-r16 notes=Full_screen_and_maximize_without_black_margin_(F11_and_app_windows)_Linux_window_manager_cos-wm_file_upload_to_Firefox_(/cos_bookmarks_File_Manager_drag_and_drop)_NetSurf_download_progress_window_progress_bar_and_cancel_for_archives
+serial 1793113768
+os version=4.1.0-r17 notes=Taskbar_vertical_battery_icon_with_five_level_lines_and_percent_(ACPI)_memory_shown_as_used/total_MB
 item name=Terminal version=4 path=/bin/Terminal.c-os sha256=13f6c1e816597507f846884b05248bdb18f52d3aa2737c9a08ccbc05026e0098 size=370032 file=Terminal-4.bin
 item name=Files version=4 path=/bin/files.c-os sha256=71bd88be011453192b2ac0c358b7674a42fd0031fd04aaa48832b7db2395ebf1 size=404144 file=Files-4.bin
 item name=Py2C version=3 path=/bin/Py2C.c-os sha256=737083bdbecd3ce526822d78e581fde21fc6f0e873b36e3dc733d44a520df367 size=827888 file=Py2C-3.bin
@@ -15,6 +15,6 @@ item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2
 item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
 item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793111745 sha256=f4b9852902c294216de95864b2d927296b62ffde0a0dbb622816bca1f0ec26ee size=41303019 parts=5 file=Kernel-1793111745 label=C-OS_4.1.0-r16
+kernel serial=1793113738 sha256=89306f54b94439cdff051fa4c24e36001be06be53823e4faaf09501ead815b7a size=41305064 parts=5 file=Kernel-1793113738 label=C-OS_4.1.0-r17
 --SIG--
-fba92d06730fd2c78d7a8824c234793ad512b7de8aace87aefe8de9f42a67395b399d4824350edaa3d3c18b2d994a4e5b940d7f5cea6c8e096e552eceb413fe6
+f9ca2ae9ff5decabb49de8b8f55e6be13bb39b82ffabecfc249a15afc1614aa7e8c24ad7f9e8a46223e9c3fb851fdc2be09317d50102596f0a79138ce87f9731
