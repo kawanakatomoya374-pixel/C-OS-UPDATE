@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793079872
-os version=4.0.9-r12 notes=Memory_returned_when_a_Linux_program_ends_or_crashes_(it_was_never_given_back),_256_MiB_of_the_kernel_heap_returned_to_programs,_smaller_NetSurf_memory_budget
+serial 1793088639
+os version=4.1.0-r13 notes=C-OS_4.1.0:_shared_file_cache_for_Linux_programs,_less_kernel_lock_traffic,_RTC_calibration_fix,_LOCK/PCACHE_logs
 item name=Terminal version=2 path=/bin/Terminal.c-os sha256=93d555917c463cd29000ac2ec8388ed84a1ccb89881b4ba06a33627cfd593271 size=369832 file=Terminal-2.bin
 item name=Files version=1 path=/bin/files.c-os sha256=8aa5f407c6bdfaeee20586a2862d28a83153588e823ad9dd49862d5cba895984 size=391000 file=Files-1.bin
 item name=Py2C version=1 path=/bin/Py2C.c-os sha256=c5ecbd4d7ba2fda7568bd80050c379ff06ffa102160c72362bada2d5a289ca5f size=827736 file=Py2C-1.bin
@@ -14,6 +14,6 @@ item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2
 item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
 item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793079681 sha256=d29ca6a525d5dbde17f63fe0ca78ecfd5743df4d5305c838c46a089297443e78 size=40918511 parts=5 file=Kernel-1793079681 label=4.0.9-r12
+kernel serial=1793087922 sha256=6ad6d3a17b29aa3223066b14421faa769126e90fb9d03618d5f13b729c836ea2 size=40930094 parts=5 file=Kernel-1793087922 label=4.1.0-r13:_shared_file_cache,_lock_profile,_renamed_C-OS_4.1.0
 --SIG--
-62e038e4ae9c048ec7c8e424b7bfea54758b19057ec93371fff6ae3b1e4f7c804d701aaafa812df62bc960fc6a58210b67c74362312f4fa6bffc089d446032cb
+3d3f6ebaaad95531f3ffccac48340ac0fead91d90e0bd769fe97284ae841b33ba386626530832a48196270ae0c986aaf10cba078a5d84a8a421452eb4a893594
