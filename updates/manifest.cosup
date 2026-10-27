@@ -1,10 +1,10 @@
 COSUP 1
 channel stable
-serial 1793098380
-os version=4.1.0-r14 notes=Disk_write_fix_(odd_buffer_addresses),_archives_(tar,_gzip,_zip)_and_File_Manager_compress/extract,_NetSurf_downloads,_Japanese_input_in_Linux_windows,_Japanese_default,_exFAT_and_format_choice
-item name=Terminal version=3 path=/bin/Terminal.c-os sha256=39396b81334998eb726a3581d4e9fa51bc5a57f35f2544ed95b857a5f2f8d3fe size=370032 file=Terminal-3.bin
-item name=Files version=2 path=/bin/files.c-os sha256=8f588440551b4c9549b808261e1b8d1cc27cd82a9b7921fd3d458c5af609cf8f size=399920 file=Files-2.bin
-item name=Py2C version=2 path=/bin/Py2C.c-os sha256=f64823fb0d929dec2519c5068b8ed00eb8437f043e283fec6e89ef8c7282644b size=827888 file=Py2C-2.bin
+serial 1793103912
+os version=4.1.0-r15 notes=Error_window_with_error_code,_not-responding_panel_(wait/end),_panic_screen,_scheduler_fix_(a_looping_program_no_longer_freezes_the_desktop),_Ctrl+Shift+J_for_Japanese_input
+item name=Terminal version=4 path=/bin/Terminal.c-os sha256=13f6c1e816597507f846884b05248bdb18f52d3aa2737c9a08ccbc05026e0098 size=370032 file=Terminal-4.bin
+item name=Files version=3 path=/bin/files.c-os sha256=2cbe0b635dc13263de151468fe9738f2758a5c4fdc155e415161d3098514b06a size=399920 file=Files-3.bin
+item name=Py2C version=3 path=/bin/Py2C.c-os sha256=737083bdbecd3ce526822d78e581fde21fc6f0e873b36e3dc733d44a520df367 size=827888 file=Py2C-3.bin
 item name=TinyCC version=1 path=/bin/tcc.c-os sha256=e3e643503618db2de76cbc8876d5c794fd2ef2beb8f68d7f54e268bc3f20bfec size=446112 file=TinyCC-1.bin
 item name=Archive version=1 path=/bin/cosarc.c-os sha256=b49fe6b507930b2e330de49f0e7f11b04a5c5ac823fad2ae324832bbb60dc656 size=126160 file=Archive-1.bin
 item name=Studio version=1 path=/bin/studio.c-os sha256=fd4ac5c23d857c7a89d56b7f26235ed4d423e9c2729e7fe3b918b14c8e22285a size=473184 file=Studio-1.bin
@@ -15,6 +15,6 @@ item name=Updater version=1 path=/bin/cosupdate.c-os sha256=a203d97df539ff5a6ab2
 item name=MessageServer version=1 path=/bin/CosMsgServer.c-os sha256=18f73f27a3fe067c198e1102ea2a0361e33493f03dce2115c9178e7bbaead6cb size=423256 file=MessageServer-1.bin
 item name=Py2CCli version=1 path=/bin/python-code-to-c.c-os sha256=c8c14992da14f574da5deb0bf36c8d49f6b82491cb8a80e997d3776662af2fbb size=933672 file=Py2CCli-1.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793098195 sha256=a841c738662aef2f5e797bf4c24d03c78863164c3031dafe7aab2dfb2674073e size=41093393 parts=5 file=Kernel-1793098195 label=4.1.0-r14:_disk_write_fix,_archives,_downloads,_Japanese_IME_in_Linux_windows,_exFAT
+kernel serial=1793103574 sha256=ad624ecc0f6c9192780e114a8c7d77e3d91c67bda1adf55b25ab6b426677a99e size=41201011 parts=5 file=Kernel-1793103574 label=4.1.0-r15:_error_window,_not_responding,_panic_screen,_scheduler_fix
 --SIG--
-d2fc297db14f7fb3f52669b2c87166063ab9558b2b894a7e6c1ac39b79a53ebbeff82e1450cce72c3b26a8b80ed1e7e9b43104b6b61eef0a1f0b509bfc4aa055
+7917c9f84ab39262acad0647075b0b7284c1df9552dc9410b980955a8f7e6f94f61cd8d851fbbe2c8838c2ea9817035f3d24cdf6ff60a33c943c2b04c25b66c0
