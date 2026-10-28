@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793168390
-os version=4.1.0-r19 notes=Firefox_starts_faster_(no_Mesa_LLVM_probe_fewer_background_tasks)_idle_CPUs_use_a_slower_timer_tick_(helps_QEMU_WHPX)
+serial 1793170034
+os version=4.1.0-r20 notes=Faster_Linux_window_display_(larger_loopback_buffer)
 item name=Terminal version=5 path=/bin/Terminal.c-os sha256=e29317105fe3e9f4ec70b31ce32043f91cde2e8e6517d7fee0b85e32e646c82f size=370080 file=Terminal-5.bin
 item name=Files version=5 path=/bin/files.c-os sha256=2a1c60702ca190bbf0e139781a69381a1a2d51fb96f94db8a481863edb80b657 size=404200 file=Files-5.bin
 item name=Py2C version=4 path=/bin/Py2C.c-os sha256=404d27675df62e85a7b84bee3ac0dff8597915ccff220c6f92687268762f7882 size=827944 file=Py2C-4.bin
@@ -15,6 +15,6 @@ item name=Updater version=2 path=/bin/cosupdate.c-os sha256=627497cf2d84b881405a
 item name=MessageServer version=2 path=/bin/CosMsgServer.c-os sha256=711a06263c8f03bfb0af2aa7e4b40c6dd422ec2ea73a08d1cfb2368065056474 size=423312 file=MessageServer-2.bin
 item name=Py2CCli version=2 path=/bin/python-code-to-c.c-os sha256=3d1ac0c5e41670fde0e0f0b30e048fa2c5e02c1fedcff47c9b43c3daab23eaa3 size=933728 file=Py2CCli-2.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793168043 sha256=b136daab01253fbb140d4858dcada936e7958ed5ba393c7078de4033e8a93f75 size=41324173 parts=5 file=Kernel-1793168043 label=C-OS_4.1.0-r19
+kernel serial=1793169936 sha256=4dcca32a02d71da313c1343c24199f5b0125d05df8ffdfb24b0ca3116015ce47 size=41324499 parts=5 file=Kernel-1793169936 label=C-OS_4.1.0-r20
 --SIG--
-2f64d1d57f20e9c63ae752c7cd747167a6d2503d31d73a229875c65df499690d961910693b5af569d68fc5e45b4852e3ec7b7d7fc79f2f1ca6db7be77c24db9c
+904db6fd97eaba20315c84622749e10a00aa520a85dc6741433b54761f7e9291da7e5c45e86dec4833e3f92cdb3e035a6424ba15299f3601705a0530934c95e2
