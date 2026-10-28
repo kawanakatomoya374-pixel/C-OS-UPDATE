@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793187426
-os version=4.1.0-r22 notes=Fix:_Firefox_crash_no_longer_stops_the_OS;_Media_shows_fps_and_decode_time
+serial 1793191368
+os version=4.1.0-r23 notes=Sample_videos_in_/apps/samples_(H.264,_VP9,_AV1;_up_to_1080p60);_diagnostics
 item name=Terminal version=6 path=/bin/Terminal.c-os sha256=421e1def89be2dfe561113142e3b01ae3338ede4f77fe244bed6f36a93badaaf size=370120 file=Terminal-6.bin
 item name=Files version=6 path=/bin/files.c-os sha256=c702a49ac433bb29712436ba60c43ea5283f1a34490596b97ef0f6022725e325 size=404240 file=Files-6.bin
 item name=Py2C version=5 path=/bin/Py2C.c-os sha256=b6c4fed46a07e6a2ad71942b32c3911f38cf1ba6ae62e363d41bf7aad466b50f size=827976 file=Py2C-5.bin
@@ -15,6 +15,12 @@ item name=Updater version=3 path=/bin/cosupdate.c-os sha256=39fcdc4524a00964cb33
 item name=MessageServer version=3 path=/bin/CosMsgServer.c-os sha256=fe6f3587803b846da8fb1a68f791cbeacce3163e211d44561fa1ee15d5b4ddc6 size=423344 file=MessageServer-3.bin
 item name=Py2CCli version=3 path=/bin/python-code-to-c.c-os sha256=c5bd6d7ff731df31f646c44bac4e89db42d7f94934d9b5531a1e28c48a24cbd1 size=933760 file=Py2CCli-3.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793187231 sha256=557e67955695eae00438bb2bd397afa7bea1252c835a95bdcacf7731fd35a160 size=41331780 parts=5 file=Kernel-1793187231 label=C-OS_4.1.0-r22
+item name=sample_h264_720p30 version=1 path=/apps/samples/sample_h264_720p30.mp4 sha256=1d36a6896cb4162ceb30a46d48caf239a596027a4f7e03c68886c1b541b8073e size=2110839 file=sample_h264_720p30-1.bin
+item name=sample_h264_1080p30 version=1 path=/apps/samples/sample_h264_1080p30.mp4 sha256=38ec2c4e2316defd92d6bd577ef6d6cf57b7a598dcabe6ee2a2ca775dd19535f size=4136288 file=sample_h264_1080p30-1.bin
+item name=sample_h264_1080p60 version=1 path=/apps/samples/sample_h264_1080p60.mp4 sha256=c7746930e69bb8b1f6ff70e45345dcf50a9e618585e7e2286d7bd8b1c6f8550f size=4703701 file=sample_h264_1080p60-1.bin
+item name=sample_vp9_720p30 version=1 path=/apps/samples/sample_vp9_720p30.mp4 sha256=c742ba1eaff8f50a4da7b5e62f7e471346dfb620e6c0a7949bc922abfd1593c6 size=1856242 file=sample_vp9_720p30-1.bin
+item name=sample_vp9_1080p60 version=1 path=/apps/samples/sample_vp9_1080p60.mp4 sha256=8dbf41a787a5152be75889e8a0778849e44d4b1ebaffe570408499a79eafd6fd size=4096003 file=sample_vp9_1080p60-1.bin
+item name=sample_av1_720p30 version=1 path=/apps/samples/sample_av1_720p30.mp4 sha256=b20b66f356bae386f6e883de835bb62abf5af16ce5c467da4e9d536cd457d954 size=1406505 file=sample_av1_720p30-1.bin
+kernel serial=1793191239 sha256=832b063c47d18d620c03a3b052740b3f433ede5f18420cd589e17f04e78a4fb8 size=41326614 parts=5 file=Kernel-1793191239 label=C-OS_4.1.0-r23
 --SIG--
-718fd7cb858762ee20f307feb1c4c0817550ef6443bd22f594b15ef16b752d2cc75e85d78314d9e9071d537448e74a0e71fc3e5b8316baaa213cd775c76c0e15
+cc4521389eed0c6220b488b241d616f6f75fcfca87a76cff57f4d3b03e22105477b43db92e13889e0b8e0a450c373de3a8c9f0bbe9a3c0cff70727ea3b6b0ba3
