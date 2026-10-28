@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793216975
-os version=4.1.0-r24 notes=C-OS_Apps:_a_store_for_apps_(mc-classic-c,_Sprint,_PSXFunkin),_app_icons_on_the_desktop,_Sprint_windows_and_JIT,_.sp_files_open_in_Sprint,_mc-classic-c_is_no_longer_part_of_the_image
+serial 1793222361
+os version=4.1.0-r25 notes=Sprint_is_part_of_C-OS_(settings:_Sprint_font_C-OS_or_Retro),_C-OS_Apps_is_written_in_Sprint,_a_choice_of_0_to_3_warnings_before_an_app_is_removed,_PSXFunkin_downloads_its_own_data
 item name=Terminal version=7 path=/bin/Terminal.c-os sha256=e5ec0af1dccc628e83b83f17b964a9cfe40eb823eaca542e98ad6ec388260f1c size=370152 file=Terminal-7.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -15,6 +15,8 @@ item name=Updater version=4 path=/bin/cosupdate.c-os sha256=48f01275edb60b493e94
 item name=MessageServer version=4 path=/bin/CosMsgServer.c-os sha256=3ff62fa068675709c51251358cc655a47ee139149326bf1926e30284c96c575d size=423384 file=MessageServer-4.bin
 item name=Py2CCli version=4 path=/bin/python-code-to-c.c-os sha256=a7b156f5337729ddbfc54890d053410f834005db7a624dadcedfde137d69b9f0 size=933800 file=Py2CCli-4.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793216919 sha256=c1d72f5570c6891b736316f6aa9d286d30e9bbe9fcfffdb8d658e0d32bf13eaf size=29739960 parts=4 file=Kernel-1793216919 label=C-OS_Apps,_app_icons,_Sprint
+item name=Sprint version=1 path=/bin/sprint.c-os sha256=459fadc11fb0d50e546573003f223db1ccca30b7c8d2b6945561d55bdb5cc39d size=1136752 file=Sprint-1.bin
+item name=CosApps version=1 path=/apps/cosapps/CosApps.sp sha256=1f0dfb7290fd81a4eb31d4e2cfb323af4187d793d466b64e586c6bce6de6691d size=12939 file=CosApps-1.bin
+kernel serial=1793222249 sha256=5451a0190df8c57a484e7aa301a171926151f9df0c9fb37441f343bfade20023 size=30156919 parts=4 file=Kernel-1793222249 label=Sprint_in_C-OS,_Sprint-based_C-OS_Apps
 --SIG--
-00a07666ed3d63265abc88badb1f56df35e3c1a8d3ab2dff2d0e5ec0c0416a5ef0100497fc0a78c5649b9d2252611a135a7daa781702265f8cd1d47107d3fb8a
+c18b84de6c622312f6eb963836a79979aa10c30149377b966d1e10c8e8124df0cb3919d38601ad2859827bb935f15babdbe29335019eb892835a59ffe9be1911
