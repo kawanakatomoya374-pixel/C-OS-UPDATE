@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793178485
-os version=4.1.0-r21 notes=Optional_fast_display_for_the_Linux_window_(Settings_>_Appearance,_experimental,_off_by_default)
+serial 1793187426
+os version=4.1.0-r22 notes=Fix:_Firefox_crash_no_longer_stops_the_OS;_Media_shows_fps_and_decode_time
 item name=Terminal version=6 path=/bin/Terminal.c-os sha256=421e1def89be2dfe561113142e3b01ae3338ede4f77fe244bed6f36a93badaaf size=370120 file=Terminal-6.bin
 item name=Files version=6 path=/bin/files.c-os sha256=c702a49ac433bb29712436ba60c43ea5283f1a34490596b97ef0f6022725e325 size=404240 file=Files-6.bin
 item name=Py2C version=5 path=/bin/Py2C.c-os sha256=b6c4fed46a07e6a2ad71942b32c3911f38cf1ba6ae62e363d41bf7aad466b50f size=827976 file=Py2C-5.bin
@@ -9,12 +9,12 @@ item name=TinyCC version=3 path=/bin/tcc.c-os sha256=94971c36121840bb049e111c554
 item name=Archive version=4 path=/bin/cosarc.c-os sha256=253bf7886e65237423399a5b4da69644b1deb8a618fd23e5aad9ce3cfb88e630 size=130736 file=Archive-4.bin
 item name=Studio version=3 path=/bin/studio.c-os sha256=9670f28fc6b94ceb1ba98659e6c937dc0526ce11f28d1cf94816426b207bb9a2 size=473272 file=Studio-3.bin
 item name=Music version=3 path=/bin/music.c-os sha256=dd69a79f4e171716250e988c57d11c827f6ad98c764b6ce22a15c1acf5ff54ba size=290808 file=Music-3.bin
-item name=Media version=3 path=/bin/Media.c-os sha256=25f3ecf30a29c3bdbf72ad31ce3ae9a1935c5cc0f5d71b325d50dba4351b466d size=6297360 file=Media-3.bin
+item name=Media version=4 path=/bin/Media.c-os sha256=aae9075e8050ad54e166e31c2b129dd3403521d667b61f5d5cbeb4f74cc58250 size=6297472 file=Media-4.bin
 item name=Photo version=3 path=/bin/Photo.c-os sha256=11294a16ecab76c63d447bc2d66632bce9d4568554e2c9c855dce0c036f976b2 size=193112 file=Photo-3.bin
 item name=Updater version=3 path=/bin/cosupdate.c-os sha256=39fcdc4524a00964cb33f6b60224fd2e5938276945b4b68e238605816389ddb1 size=128800 file=Updater-3.bin
 item name=MessageServer version=3 path=/bin/CosMsgServer.c-os sha256=fe6f3587803b846da8fb1a68f791cbeacce3163e211d44561fa1ee15d5b4ddc6 size=423344 file=MessageServer-3.bin
 item name=Py2CCli version=3 path=/bin/python-code-to-c.c-os sha256=c5bd6d7ff731df31f646c44bac4e89db42d7f94934d9b5531a1e28c48a24cbd1 size=933760 file=Py2CCli-3.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-kernel serial=1793178377 sha256=c95dd9ee2dde4cb52890f86c8b06ebd894ea59a4e7de975c98f7784f31f5a7ea size=41332052 parts=5 file=Kernel-1793178377 label=C-OS_4.1.0-r21
+kernel serial=1793187231 sha256=557e67955695eae00438bb2bd397afa7bea1252c835a95bdcacf7731fd35a160 size=41331780 parts=5 file=Kernel-1793187231 label=C-OS_4.1.0-r22
 --SIG--
-958a9063bd4913208466f30136241dc60815ea4a23e3cf63ecd619057745137f8f3ea3a71a38ca8171f17990f9134b5e8ddcf0215237327c3f21f2bf3119e30c
+718fd7cb858762ee20f307feb1c4c0817550ef6443bd22f594b15ef16b752d2cc75e85d78314d9e9071d537448e74a0e71fc3e5b8316baaa213cd775c76c0e15
