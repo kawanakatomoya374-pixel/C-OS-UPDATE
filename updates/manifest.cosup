@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793553079
-os version=4.1.0-r26 notes=Fix_for_machines_with_a_very_fast_CPU_(waits_on_the_PIT_clock_when_starting_the_other_CPU_cores),_the_Launcher_is_written_in_Sprint,_app_installs_no_longer_fail_on_a_stale_web_cache,_Sprint_apps_can_be_packed_with_their_permissions
+serial 1793559817
+os version=4.1.0-r27 notes=Fixes_the_update_failure_of_r26:_the_updater_makes_the_folders_an_item_needs_(the_Launcher's_/apps/launcher)._Installs_the_Launcher_again
 item name=Terminal version=7 path=/bin/Terminal.c-os sha256=e5ec0af1dccc628e83b83f17b964a9cfe40eb823eaca542e98ad6ec388260f1c size=370152 file=Terminal-7.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -11,7 +11,7 @@ item name=Studio version=4 path=/bin/studio.c-os sha256=ba35641976bfee10d481ea91
 item name=Music version=4 path=/bin/music.c-os sha256=0b1aacfd6420d3438d0bcb9bc7ef8d4f2271bf228cec3a5feaa2af854fc20d06 size=290840 file=Music-4.bin
 item name=Media version=5 path=/bin/Media.c-os sha256=6dd6858c0da624c9fed09382282ef30bbeb74b4f9dfaa70153d0f62928c69617 size=6297544 file=Media-5.bin
 item name=Photo version=4 path=/bin/Photo.c-os sha256=af01a123c5f4bf21ced1805b3f417032053f968603a6013e5dc326cc35311a8c size=193144 file=Photo-4.bin
-item name=Updater version=4 path=/bin/cosupdate.c-os sha256=48f01275edb60b493e94b98f862e424c3d432047e1e2e68790d8522bf5309847 size=128840 file=Updater-4.bin
+item name=Updater version=5 path=/bin/cosupdate.c-os sha256=7393586f0efcd165a3c21a10008ccd71070da09499bc63dde16f95eb7d13d7e0 size=128840 file=Updater-5.bin
 item name=MessageServer version=4 path=/bin/CosMsgServer.c-os sha256=3ff62fa068675709c51251358cc655a47ee139149326bf1926e30284c96c575d size=423384 file=MessageServer-4.bin
 item name=Py2CCli version=4 path=/bin/python-code-to-c.c-os sha256=a7b156f5337729ddbfc54890d053410f834005db7a624dadcedfde137d69b9f0 size=933800 file=Py2CCli-4.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
@@ -19,6 +19,6 @@ item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556
 item name=CosApps version=2 path=/apps/cosapps/CosApps.sp sha256=4a8affaf02fc451d502c1b60bc1c3e1a604b2aca05ef196b6a1767b29570e357 size=13178 file=CosApps-2.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
 item name=LinuxInstall version=1 path=/apps/linux/LinuxInstall.c-os sha256=2382af6640b8490cc85886f4123d913a63bff9588e32f15c5f943b1d96a8cc3f size=124880 file=LinuxInstall-1.bin
-kernel serial=1793552691 sha256=093fc080038b78fd87a2f3510f9fdb8d2c9860eec66c7f16d7e0bc81d79064bd size=30167452 parts=4 file=Kernel-1793552691 label=PIT_waits,_Sprint_Launcher,_cache-proof_installs
+kernel serial=1793559757 sha256=d3d6eb86be0004d5677e96a8b219c4be4bd63a4856dac818fc0f940660f54b2e size=30167474 parts=4 file=Kernel-1793559757 label=update_fix,_Launcher
 --SIG--
-5d5c99b468f6d9d17d1ac3be68f0276aeab2d0df2bb8a43c9dc5f444d58803c85d083a31fa0bc06bd4dc2d795797ac8857adf8a8d074061bc17b32603d497c92
+1552bf0160bdb09ce011b22eaf64f18c7562b99f42926f05d0f2805741219959efdd7398804e6f6675c4a9bc29489a4d702ac513b58a872dd4a8a2e3aab2c47e
