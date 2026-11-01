@@ -9,6 +9,7 @@ import cosgui
 import fs
 import str
 import _cos
+import time
 
 const BASE_DEFAULT = "https://kawanakatomoya374-pixel.github.io/C-OS-APPS/apps/"
 const INSTALLER = "/apps/linux/LinuxInstall.c-os"
@@ -154,6 +155,12 @@ class Bar extends gui.Widget:
         if self.pct > 0:
             c.fill_round_rect(ax, ay, imax(10, self.w * self.pct // 100), 10, 5, 0x3a8c4c)
 
+func join_rest(f):
+    let out = []
+    for i in range(5, len(f)):
+        out.append(f[i])
+    return out.join(" ")
+
 func imax(a, b):
     return a if a > b else b
 
@@ -277,13 +284,13 @@ func step_loading():
     if job < 0:
         let url = ""
         if phase == "catalog":
-            url = base .. "catalog.manifest"
+            url = base .. "catalog.manifest?t=" .. to_string(to_int(time.now()))
         else:
             if icon_i >= len(apps):
                 phase = "idle"
                 return
             let a = apps[icon_i]
-            url = base .. a.id .. "/" .. a.icon
+            url = base .. a.id .. "/" .. a.icon .. "?v=" .. a.iconsha.slice(0, 12)
         job = _cos.http_start(url)
         if job < 0:
             set_status(tr("No network.", "ネットワークに接続できません。"))
@@ -337,7 +344,8 @@ func step_install():
             if x.id == install_id:
                 a = x
         refresh_all()
-        set_status(a.title .. tr(" is installed. Its icon is on the desktop.", " をインストールしました。アイコンはデスクトップにあります。") if f[0] == "done" else tr("Stopped.", "中断しました。"))
+        let why = join_rest(f)
+        set_status(a.title .. tr(" is installed. Its icon is on the desktop.", " をインストールしました。アイコンはデスクトップにあります。") if f[0] == "done" else tr("Stopped: ", "中断しました: ") .. why)
         app.relayout()
 
 class Pump extends gui.Widget:

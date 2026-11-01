@@ -1,0 +1,270 @@
+# The Launcher (the former Craft icon), in Sprint. Tabs: Craft, mc-classic-c (every version of Minecraft Classic rewritten in C), Linux (Firefox).
+# A game is a program of its own: the Launcher only starts it and shows whether it runs. Permissions: sprint run --allow-ffi --allow-read=/apps --allow-read=/system --allow-read=/linux --allow-write=/system Launcher.sp
+import gui
+import gfx
+import window
+import cosgui
+import fs
+import _cos
+
+const JA = (_cos.prefs() & 2) != 0
+func tr(en, ja):
+    return ja if JA else en
+
+# id, title, date, blurb, more
+const VERSIONS = [
+    ["c0.0.11a", "Classic 0.0.11a", "May 17, 2009", "Where it starts.", "Six tiles, a 256x256x64 level from noise heightmaps, a zombie, grass that spreads."],
+    ["c0.0.13a", "Classic 0.0.13a", "May 22, 2009", "Water, lava and bedrock.", "Flowing and still water and lava, bedrock and a staged world generator."],
+    ["c0.0.13a_03", "Classic 0.0.13a_03", "May 22, 2009", "Rolling hills.", "A real heightmap, a soiling stage that puts grass and dirt on top."],
+    ["c0.0.14a_08", "Classic 0.0.14a_08", "May 28, 2009", "Sand, gravel and ores.", "Falling sand and gravel, gold, iron and coal ore."],
+    ["c0.0.16a_02", "Classic 0.0.16a_02", "June 7, 2009", "The first multiplayer build.", "Multiplayer code is part of it; this port plays offline."],
+    ["c0.0.17a", "Classic 0.0.17a", "June 10, 2009", "Player list and longer chat.", "Hold Tab to see who is on a server."],
+    ["c0.0.18a_02", "Classic 0.0.18a_02", "June 14, 2009", "Chat and teleport fixes.", "More characters in the chat; servers can move you."],
+    ["c0.0.19a_04", "Classic 0.0.19a_04", "June 20, 2009", "Glass, sponge and a hotbar.", "New tiles and a hotbar at the bottom of the screen."],
+    ["c0.0.20a_02", "Classic 0.0.20a_02", "June 20, 2009", "Cloth, flowers and mushrooms.", "16 colours of cloth, gold blocks, dandelions, roses and mushrooms."],
+    ["c0.0.23a_01", "Classic 0.0.23a_01", "July 11, 2009", "Sound and an Options menu.", "Footsteps, music, invert mouse, render distance."],
+    ["c0.24_st_03", "Survival Test 0.24", "Sept 1, 2009", "Health and the first mobs.", "Hearts, fall damage, drowning; zombie, skeleton, creeper and pig."],
+    ["c0.25_05_st", "Survival Test 0.25", "Sept 3, 2009", "Smarter mobs and arrows.", "Mobs chase and fight each other, skeletons shoot arrows."],
+    ["c0.27_st", "Survival Test 0.27", "Oct 24, 2009", "TNT, spiders and rain.", "TNT, spiders, new tiles; F5 toggles rain."],
+    ["c0.28_01", "Classic 0.28_01", "Oct 27, 2009", "Creative again.", "Block select screen (B), middle-click pick, spawn point (Enter / R)."],
+    ["c0.29_02", "Classic 0.29_02", "Oct 30, 2009", "Multiplayer fixes.", "Name tags, ops, and exact aiming at slabs and flowers."],
+    ["c0.30", "Classic 0.30", "Nov 10, 2009", "The last Classic.", "Creative and Survival. Drops, TNT, every mob."]
+]
+const CRAFT = "/apps/minecraft/Craft.c-os"
+const LINUX_GUI = "/apps/linux/Linux.c-os"
+const INSTALLER = "/apps/linux/LinuxInstall.c-os"
+
+func exists(path):
+    try:
+        return fs.exists(path)
+    catch:
+        return false
+
+func mc_path(i, survival):
+    return "/apps/minecraft/mc-" .. VERSIONS[i][0] .. ("-survival" if survival else "") .. ".c-os"
+
+func fx_installed():
+    return exists("/linux/usr/lib/firefox/firefox") and exists("/linux/usr/bin/Xtigervnc")
+
+let app = nil
+let msg = nil
+let pid = 0              # the game this Launcher started (0 = none)
+let installing = false
+let sel = 15
+
+func running():
+    if pid > 0 and not _cos.running(pid):
+        pid = 0
+    return pid > 0
+
+func dimmed(l):
+    l.dim = true
+    return l
+
+func say(s):
+    msg.set_text(s)
+
+func start(path, args):
+    if installing:
+        say(tr("The installation is running.", "インストール中です。"))
+        return
+    if running():
+        say(tr("A game is already running.", "ゲームがすでに起動しています。"))
+        return
+    if not exists(path):
+        say(tr("Not installed: get it in C-OS Apps.", "未インストールです。C-OS Apps から入手してください。"))
+        return
+    let p = _cos.spawn(path, args)
+    if p <= 0:
+        say(tr("Could not start the game.", "起動できません。"))
+    else:
+        pid = p
+        say("")
+
+# ---- the list of Minecraft versions ----
+class VerList extends gui.Widget:
+    let top = 0
+    let on_select = nil
+    override func init(self, w, h, on_select):
+        super(0, 0, w, h)
+        self.on_select = on_select
+        self.focusable = true
+    func rows_fit(self):
+        return self.h // 44
+    func clamp_top(self):
+        let mx = len(VERSIONS) - self.rows_fit()
+        self.top = 0 if mx < 0 else (0 if self.top < 0 else (mx if self.top > mx else self.top))
+    func choose(self, i):
+        if i < 0:
+            i = 0
+        if i >= len(VERSIONS):
+            i = len(VERSIONS) - 1
+        sel = i
+        if i < self.top:
+            self.top = i
+        if i >= self.top + self.rows_fit():
+            self.top = i - self.rows_fit() + 1
+        self.clamp_top()
+        self.dirty()
+        self.on_select(i)
+    override func on_mouse_down(self, px, py, button):
+        self.choose(self.top + py // 44)
+    override func on_wheel(self, dy):
+        self.top = self.top - dy
+        self.clamp_top()
+        self.dirty()
+        return true
+    override func on_key(self, k):
+        if k == "Up":
+            self.choose(sel - 1)
+        elif k == "Down":
+            self.choose(sel + 1)
+    override func draw_self(self, c, ax, ay):
+        c.fill_round_rect(ax, ay, self.w, self.h, 8, 0x181a1f)
+        c.set_clip(ax, ay, self.w, self.h)
+        for k in range(self.rows_fit() + 1):
+            let i = self.top + k
+            if i >= len(VERSIONS):
+                break
+            let y = ay + 4 + k * 44
+            let have = exists(mc_path(i, false))
+            if i == sel:
+                c.fill_round_rect(ax + 4, y, self.w - 8, 40, 6, 0x2e5c34)
+            c.text(ax + 14, y + 6, VERSIONS[i][1], 0xf0f2f6 if have else 0x6e727c, 1)
+            c.text(ax + 14, y + 24, VERSIONS[i][2], 0x8c92a0, 1)
+        c.clear_clip()
+
+let detail_title = nil
+let detail_date = nil
+let detail_blurb = nil
+let detail_more = nil
+let detail_note = nil
+let play_btn = nil
+let surv_btn = nil
+
+func show_version(i):
+    let v = VERSIONS[i]
+    detail_title.set_text(v[1])
+    detail_date.set_text(v[2])
+    detail_blurb.set_text(v[3])
+    detail_more.set_text(v[4])
+    detail_note.set_text("" if exists(mc_path(i, false)) else tr("Not installed yet: open C-OS Apps and download mc-classic-c.", "未インストールです。C-OS Apps で mc-classic-c をダウンロードしてください。"))
+    surv_btn.visible = v[0] == "c0.30"
+    play_btn.text = tr("Play Creative", "クリエイティブで遊ぶ") if v[0] == "c0.30" else tr("Play", "遊ぶ")
+    play_btn.set_size(gfx.text_advance(play_btn.text) + 24, 24)
+    surv_btn.set_size(gfx.text_advance(surv_btn.text) + 24, 24)
+    app.relayout()
+
+# ---- Firefox ----
+let fx_status = nil
+let fx_bar = nil
+let fx_btn = nil
+
+func refresh_fx():
+    if installing:
+        fx_btn.text = tr("Installing...", "インストール中...")
+    elif fx_installed():
+        fx_btn.text = tr("Start", "起動")
+        fx_status.set_text(tr("Firefox is installed. Press Start.", "Firefox はインストール済みです。"))
+    else:
+        fx_btn.text = tr("Install", "インストール")
+        fx_status.set_text(tr("Firefox is not installed yet. Install downloads it (about 330 MB) and needs about 1 GB on the disk.", "Firefox はまだインストールされていません(約330MBをダウンロード、約1GB必要)。"))
+    fx_btn.dirty()
+
+func fx_press():
+    if installing:
+        return
+    if fx_installed():
+        start(LINUX_GUI, ["firefox"])
+        return
+    if not exists(INSTALLER):
+        say(tr("The installer is missing.", "インストーラーがありません。"))
+        return
+    if exists("/system/linuxpack"):
+        fs.write_file("/system/linuxpack/progress.txt", "running 0 0 0 0 starting\n")
+    if _cos.spawn(INSTALLER, []) > 0:
+        installing = true
+        refresh_fx()
+
+func step_install():
+    if not installing:
+        return
+    let t = ""
+    if exists("/system/linuxpack/progress.txt"):
+        t = fs.read_file("/system/linuxpack/progress.txt")
+    let f = t.trim().split(" ")
+    if len(f) < 5:
+        return
+    let bytes = to_int(f[4])
+    let pct = to_int(f[3]) * 100 // bytes if bytes > 0 else 0
+    fx_bar.set_value(pct if pct < 100 else 100)
+    fx_status.set_text(to_string(pct) .. "%   " .. f[1] .. " / " .. f[2] .. "   " .. join_rest(f))
+    if f[0] == "done" or f[0] == "error":
+        installing = false
+        fx_status.set_text("" if f[0] == "done" else tr("Stopped. Press Install to continue where it stopped.", "中断しました。もう一度押すと続きから再開します。"))
+        refresh_fx()
+
+class Pump extends gui.Widget:
+    override func init(self):
+        super(0, 0, 1, 1)
+    override func on_tick(self, ms):
+        running()
+        step_install()
+
+func join_rest(f):
+    let out = []
+    for i in range(5, len(f)):
+        out.append(f[i])
+    return out.join(" ")
+
+# ---- window ----
+app = gui.App(860, 520, "Launcher")
+gui.set_theme("dark")
+msg = gui.label("")
+msg.color = 0xf0b45a
+
+# Craft
+let craft_page = gui.column([
+    gui.label("Craft", 4),
+    gui.label(tr("A voxel sandbox: dig, build, explore an endless world.", "掘って、作って、果てしない世界を探検するボクセルゲーム。")),
+    gui.label(tr("W A S D move   Space jump   Tab fly   mouse look   left / right click break / place", "WASD 移動  Space ジャンプ  Tab 飛行  マウス 視点  左/右クリック 壊す/置く")),
+    gui.label(tr("E / R choose the block   1-9 hotbar   T chat   F12 full screen   Esc release the mouse", "E/R ブロック選択  1-9 ホットバー  T チャット  F12 全画面  Esc マウス解放")),
+    dimmed(gui.label("Craft is MIT licensed (github.com/fogleman/Craft).")),
+    gui.button(tr("Play", "遊ぶ"), w => start(CRAFT, []))
+], 10, 24)
+
+# mc-classic-c
+detail_title = gui.label("", 3)
+detail_date = gui.label("")
+detail_blurb = gui.label("", 2)
+detail_more = gui.label("", 1, 440)
+detail_note = gui.label("")
+detail_note.color = 0xf0b45a
+play_btn = gui.button(tr("Play", "遊ぶ"), w => start(mc_path(sel, false), []))
+surv_btn = gui.button(tr("Play Survival", "サバイバルで遊ぶ"), w => start(mc_path(sel, true), []))
+let lic = gui.label("mc-classic-c by degradka (GPL-3.0): Minecraft Classic rewritten in C.")
+let vlist = VerList(300, 380, show_version)
+let mc_right = gui.column([detail_title, detail_date, detail_blurb, detail_more, detail_note, lic, gui.row([play_btn, surv_btn], 8, 0)], 8, 8)
+mc_right.flex = 1
+let mc_page = gui.row([vlist, mc_right], 12, 12)
+
+# Firefox
+fx_status = gui.label("", 1, 640)
+fx_bar = gui.progress(0, 100)
+fx_btn = gui.button(tr("Install", "インストール"), w => fx_press())
+let fx_page = gui.column([
+    gui.label("Firefox", 4),
+    gui.label(tr("Mozilla Firefox, a Linux program, in a C-OS window.", "Mozilla Firefox(Linux のプログラム)を C-OS のウィンドウで動かします。")),
+    gui.label(tr("The first start takes minutes: the Linux programs are emulated and loaded from disk.", "最初の起動には数分かかります。Linux のプログラムはエミュレートされ、ディスクから読み込まれます。")),
+    fx_status, fx_bar, fx_btn,
+    dimmed(gui.label(tr("Firefox and the Linux programs are downloaded from C-OS-APPS on GitHub; they are not part of C-OS.", "Firefox などの Linux プログラムは GitHub の C-OS-APPS から取得します(C-OS には含まれません)。")))
+], 10, 24)
+
+let tabs = gui.tabs(["Craft", "mc-classic-c", "Linux"], [craft_page, mc_page, fx_page])
+tabs.flex = 1
+app.fill(gui.column([tabs, gui.row([msg, Pump()], 8, 8)], 0, 0))
+refresh_fx()
+vlist.choose(sel)
+app.relayout()
+let win = window.open(860, 520, "Launcher", "cos")
+window.run(app, win, -1, (a, w) => true)

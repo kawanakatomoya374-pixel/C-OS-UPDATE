@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793222361
-os version=4.1.0-r25 notes=Sprint_is_part_of_C-OS_(settings:_Sprint_font_C-OS_or_Retro),_C-OS_Apps_is_written_in_Sprint,_a_choice_of_0_to_3_warnings_before_an_app_is_removed,_PSXFunkin_downloads_its_own_data
+serial 1793553079
+os version=4.1.0-r26 notes=Fix_for_machines_with_a_very_fast_CPU_(waits_on_the_PIT_clock_when_starting_the_other_CPU_cores),_the_Launcher_is_written_in_Sprint,_app_installs_no_longer_fail_on_a_stale_web_cache,_Sprint_apps_can_be_packed_with_their_permissions
 item name=Terminal version=7 path=/bin/Terminal.c-os sha256=e5ec0af1dccc628e83b83f17b964a9cfe40eb823eaca542e98ad6ec388260f1c size=370152 file=Terminal-7.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -15,8 +15,10 @@ item name=Updater version=4 path=/bin/cosupdate.c-os sha256=48f01275edb60b493e94
 item name=MessageServer version=4 path=/bin/CosMsgServer.c-os sha256=3ff62fa068675709c51251358cc655a47ee139149326bf1926e30284c96c575d size=423384 file=MessageServer-4.bin
 item name=Py2CCli version=4 path=/bin/python-code-to-c.c-os sha256=a7b156f5337729ddbfc54890d053410f834005db7a624dadcedfde137d69b9f0 size=933800 file=Py2CCli-4.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-item name=Sprint version=1 path=/bin/sprint.c-os sha256=459fadc11fb0d50e546573003f223db1ccca30b7c8d2b6945561d55bdb5cc39d size=1136752 file=Sprint-1.bin
-item name=CosApps version=1 path=/apps/cosapps/CosApps.sp sha256=1f0dfb7290fd81a4eb31d4e2cfb323af4187d793d466b64e586c6bce6de6691d size=12939 file=CosApps-1.bin
-kernel serial=1793222249 sha256=5451a0190df8c57a484e7aa301a171926151f9df0c9fb37441f343bfade20023 size=30156919 parts=4 file=Kernel-1793222249 label=Sprint_in_C-OS,_Sprint-based_C-OS_Apps
+item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556c4267216d945f46155f61e9afd809b75d4480ccd size=1136784 file=Sprint-2.bin
+item name=CosApps version=2 path=/apps/cosapps/CosApps.sp sha256=4a8affaf02fc451d502c1b60bc1c3e1a604b2aca05ef196b6a1767b29570e357 size=13178 file=CosApps-2.bin
+item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
+item name=LinuxInstall version=1 path=/apps/linux/LinuxInstall.c-os sha256=2382af6640b8490cc85886f4123d913a63bff9588e32f15c5f943b1d96a8cc3f size=124880 file=LinuxInstall-1.bin
+kernel serial=1793552691 sha256=093fc080038b78fd87a2f3510f9fdb8d2c9860eec66c7f16d7e0bc81d79064bd size=30167452 parts=4 file=Kernel-1793552691 label=PIT_waits,_Sprint_Launcher,_cache-proof_installs
 --SIG--
-c18b84de6c622312f6eb963836a79979aa10c30149377b966d1e10c8e8124df0cb3919d38601ad2859827bb935f15babdbe29335019eb892835a59ffe9be1911
+5d5c99b468f6d9d17d1ac3be68f0276aeab2d0df2bb8a43c9dc5f444d58803c85d083a31fa0bc06bd4dc2d795797ac8857adf8a8d074061bc17b32603d497c92
