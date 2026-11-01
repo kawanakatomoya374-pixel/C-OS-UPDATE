@@ -207,7 +207,24 @@ func apply_filter(text):
         rows[a.id].row.set_visible(hit)
     app.relayout()
 
+# an error inside a button or the timer must not end the store: it is shown in the status line and kept in /system/apps/store_error.txt
+func report_error(where, e):
+    let msg = where .. ": " .. to_string(e)
+    busy = false
+    try:
+        set_status(tr("Error: ", "エラー: ") .. msg)
+        refresh_all()
+        fs.write_file("/system/apps/store_error.txt", msg .. "\n")
+    catch e2:
+        return
+
 func start_install(a):
+    try:
+        start_install_inner(a)
+    catch e:
+        report_error("install", e)
+
+func start_install_inner(a):
     if busy:
         return
     let url = base .. a.id .. "/"
@@ -352,8 +369,11 @@ class Pump extends gui.Widget:
     override func init(self):
         super(0, 0, 1, 1)
     override func on_tick(self, ms):
-        step_loading()
-        step_install()
+        try:
+            step_loading()
+            step_install()
+        catch e:
+            report_error("update", e)
 
 # ---- window ----
 app = gui.App(760, 520, "C-OS Apps")
