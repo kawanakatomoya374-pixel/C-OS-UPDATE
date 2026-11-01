@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793561168
-os version=4.1.0-r28 notes=Runs_fixed-address_Linux_programs_unmodified_(NetSurf),_Linux_window_waits_for_the_X_server,_store_keeps_running_on_errors
+serial 1793561766
+os version=4.1.0-r29 notes=C-OS_Apps:_an_unwritable_progress_file_no_longer_stops_a_download
 item name=Terminal version=7 path=/bin/Terminal.c-os sha256=e5ec0af1dccc628e83b83f17b964a9cfe40eb823eaca542e98ad6ec388260f1c size=370152 file=Terminal-7.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -16,9 +16,9 @@ item name=MessageServer version=4 path=/bin/CosMsgServer.c-os sha256=3ff62fa0686
 item name=Py2CCli version=4 path=/bin/python-code-to-c.c-os sha256=a7b156f5337729ddbfc54890d053410f834005db7a624dadcedfde137d69b9f0 size=933800 file=Py2CCli-4.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
 item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556c4267216d945f46155f61e9afd809b75d4480ccd size=1136784 file=Sprint-2.bin
-item name=CosApps version=3 path=/apps/cosapps/CosApps.sp sha256=5b38e4a9ef4c043b61eedd00cf167af880f70904e265f29c415652e8d880fff8 size=13782 file=CosApps-3.bin
+item name=CosApps version=4 path=/apps/cosapps/CosApps.sp sha256=1534807c4c03935dbc3ddb9c30f7d3c8042ee0d9b58c69c2d9ecd25e0a96b2c2 size=14299 file=CosApps-4.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
 item name=LinuxInstall version=2 path=/apps/linux/LinuxInstall.c-os sha256=b7f01dcd804a83eda036a5e0f9516d2195d7091ac25cbbca99582e26b8267e66 size=124880 file=LinuxInstall-2.bin
-kernel serial=1793561031 sha256=49f571f98ded09ad2527df99bc0bf0d93da42c7c2ab14dc2e0295f207cd330a9 size=30169451 parts=4 file=Kernel-1793561031 label=Fixed-address_Linux_programs_(NetSurf),_X_wait,_store_error_log
+kernel serial=1793561637 sha256=bf73060003a26a6dba6ed53f65e82644c49d895311c6782741a6419e303c1a43 size=30168645 parts=4 file=Kernel-1793561637 label=Store:_download_fix
 --SIG--
-ec68343705c6a7952656b52bb1038088ade9199c257e454a0c05e67dafabe35a016fae21291bc2ca7d14cb55eb13373cbc3429796fd1f339b13f03d7a2472ca3
+dd1c546131ce03ca7398564cd646daab399a4ce561b01cea3e82ddb9f24fbb0f5fefb74eb62da4a021cd5a1f8c63a16cf27da7e4ccfe6e04003ed7e119cc438f

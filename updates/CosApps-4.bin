@@ -175,6 +175,7 @@ let phase = "catalog"    # catalog | icons | idle
 let job = -1
 let icon_i = 0
 let install_id = ""
+let stale = ""
 let busy = false
 
 func set_status(s):
@@ -228,8 +229,20 @@ func start_install_inner(a):
     if busy:
         return
     let url = base .. a.id .. "/"
-    if exists("/system/linuxpack"):
-        fs.write_file("/system/linuxpack/progress.txt", "running 0 0 0 0 starting\n")
+    # the progress file of an earlier run may be unwritable (an I/O error on some disks): that is not a reason to stop. What it holds now is remembered and ignored until the installer changes it.
+    stale = read_text("/system/linuxpack/progress.txt")
+    if stale == nil:
+        stale = ""
+    try:
+        fs.remove("/system/linuxpack/progress.txt")
+    catch e1:
+        let ignored = 1
+    try:
+        if exists("/system/linuxpack"):
+            fs.write_file("/system/linuxpack/progress.txt", "running 0 0 0 0 starting\n")
+            stale = ""
+    catch e2:
+        let ignored2 = 1
     let pid = _cos.spawn(INSTALLER, [url])
     if pid <= 0:
         set_status(tr("Could not start the installer.", "インストーラーを起動できません。"))
@@ -343,7 +356,7 @@ func step_install():
     if not busy:
         return
     let t = read_text("/system/linuxpack/progress.txt")
-    if t == nil:
+    if t == nil or (stale != "" and t == stale):
         return
     let f = t.trim().split(" ")
     if len(f) < 5:
