@@ -167,9 +167,9 @@ func imax(a, b):
 # ---- the store ----
 let apps = []
 let rows = {}            # id -> {row, desc, dl, tr, bar, icon}
+
 let app = nil
 let status = nil
-let col = nil
 let base = base_url()
 let phase = "catalog"    # catalog | icons | idle
 let job = -1
@@ -177,6 +177,29 @@ let icon_i = 0
 let install_id = ""
 let stale = ""
 let busy = false
+let col = nil           # the list column (made below)
+# The list column has a fixed size (auto = false: the rows span the window's width), and a scroll view only scrolls when its content is taller than the view:
+# the column's height is therefore worked out here from its visible rows (without this the column was as high as the view and the list never scrolled).
+func fit_list():
+    let hh = 16
+    let n = 0
+    for a in apps:
+        let r = rows[a.id].row
+        if r.visible:
+            hh += r.pref()[1]
+            n += 1
+    if n > 1:
+        hh += 6 * (n - 1)
+    col.h = hh
+
+func relayout_list():
+    try:
+        fit_list()
+        app.relayout()
+        fit_list()
+    catch e:
+        pass
+    app.relayout()
 
 func set_status(s):
     status.set_text(s)
@@ -206,7 +229,7 @@ func apply_filter(text):
     for a in apps:
         let hit = q == "" or a.title.lower().contains(q) or a.desc.lower().contains(q) or a.id.lower().contains(q)
         rows[a.id].row.set_visible(hit)
-    app.relayout()
+    relayout_list()
 
 # an error inside a button or the timer must not end the store: it is shown in the status line and kept in /system/apps/store_error.txt
 func report_error(where, e):
@@ -303,7 +326,7 @@ func load_catalog_done(text):
     for a in apps:
         make_row(a)
     refresh_all()
-    app.relayout()
+    relayout_list()
     set_status(to_string(len(apps)) .. tr(" app(s)", " 個のアプリ"))
     phase = "icons"
     icon_i = 0
@@ -376,7 +399,7 @@ func step_install():
         refresh_all()
         let why = join_rest(f)
         set_status(a.title .. tr(" is installed. Its icon is on the desktop.", " をインストールしました。アイコンはデスクトップにあります。") if f[0] == "done" else tr("Stopped: ", "中断しました: ") .. why)
-        app.relayout()
+        relayout_list()
 
 class Pump extends gui.Widget:
     override func init(self):

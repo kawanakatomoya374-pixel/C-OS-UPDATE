@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793605729
-os version=4.1.0-r31 notes=Hardware_cursor_on_the_2D_GPU,_Terminal_runs_Linux_commands_by_name_(git,_curl),_lighter_system_call_path,_installer_records_packs_for_the_store
+serial 1793645184
+os version=4.1.0-r32 notes=Java_runs:_CPU_exceptions_reach_the_program's_signal_handlers,_old_vsyscall_calls,_per-thread_signal_masks,_a_fixed-address_program_can_start_another_program,_C-OS_Apps_list_scrolls
 item name=Terminal version=8 path=/bin/Terminal.c-os sha256=44ac73bc9ed88d27e828844f25f84c8a4b551c3c6fcdafb368ac9c49f20692b9 size=370224 file=Terminal-8.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -16,9 +16,9 @@ item name=MessageServer version=4 path=/bin/CosMsgServer.c-os sha256=3ff62fa0686
 item name=Py2CCli version=4 path=/bin/python-code-to-c.c-os sha256=a7b156f5337729ddbfc54890d053410f834005db7a624dadcedfde137d69b9f0 size=933800 file=Py2CCli-4.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
 item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556c4267216d945f46155f61e9afd809b75d4480ccd size=1136784 file=Sprint-2.bin
-item name=CosApps version=4 path=/apps/cosapps/CosApps.sp sha256=1534807c4c03935dbc3ddb9c30f7d3c8042ee0d9b58c69c2d9ecd25e0a96b2c2 size=14299 file=CosApps-4.bin
+item name=CosApps version=5 path=/apps/cosapps/CosApps.sp sha256=0f46025e349b295d120856b789070152149f2053397a3728b1bad906fe93d9dc size=15015 file=CosApps-5.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
 item name=LinuxInstall version=3 path=/apps/linux/LinuxInstall.c-os sha256=c88754638c25bb9189ffb665176d58c2f9fe7027b297026c7f40c225906aa8b9 size=124880 file=LinuxInstall-3.bin
-kernel serial=1793605005 sha256=af18219cf2c623df9a813ca92bfa5a2c6b6418110c4da88867fdb786b8be749e size=30165732 parts=4 file=Kernel-1793605005 label=Hardware_cursor,_Linux_commands_in_the_Terminal,_syscall_path
+kernel serial=1793644263 sha256=7af763c82fa7cbf11c9face52e05ad15efab66e56dda26335c0ef3934b2242b4 size=30169081 parts=4 file=Kernel-1793644263 label=Java_support,_scrolling_store,_fixed-address_exec_fix
 --SIG--
-9fa8a8473044f4b46083dc1614a3c824b20bf62f8f0d1539a5270c4cff05b36f9dd778c8098dbd4a1bbbe423f276929eac1bed04d57221a2784e80ef4286fc9f
+93dd0a9655c51fa63d950c7c2c6596184fe46ded6ba798f3dd70dd2060b2e9ffdd0b362aab439a32d008f884fff88596279f6df7c5c19eea403bf90232b3acec
