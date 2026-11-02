@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793647531
-os version=4.1.0-r33 notes=App_packs_can_share_identical_chunks_(smaller_C-OS-APPS)
+serial 1793656167
+os version=4.1.0-r34 notes=Processes_waiting_on_pipes_and_sockets_are_woken_at_once_(pipe_round_trip_25x_faster),_creat/capget/capset
 item name=Terminal version=8 path=/bin/Terminal.c-os sha256=44ac73bc9ed88d27e828844f25f84c8a4b551c3c6fcdafb368ac9c49f20692b9 size=370224 file=Terminal-8.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -19,6 +19,6 @@ item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556
 item name=CosApps version=5 path=/apps/cosapps/CosApps.sp sha256=0f46025e349b295d120856b789070152149f2053397a3728b1bad906fe93d9dc size=15015 file=CosApps-5.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
 item name=LinuxInstall version=4 path=/apps/linux/LinuxInstall.c-os sha256=f141a90b6b18834771af320741536b0c1e145c3ac9354df516181e817a233e5d size=124880 file=LinuxInstall-4.bin
-kernel serial=1793647420 sha256=62f028b2cea0551cc8ddd6336120d366a569d6b0abe73b7853e6f73636021de2 size=30169974 parts=4 file=Kernel-1793647420 label=Packs_share_identical_chunks
+kernel serial=1793656082 sha256=30dbb246da8f0219d71a488f2b3cf7ea3a4123689db05970d40d50028b43dbfa size=30168319 parts=4 file=Kernel-1793656082 label=Faster_pipes_and_process_switches
 --SIG--
-2442ff6bff99aef2526dc74860555e0c99ed7698e8062b91e5fce66bff9bb0753326cf13f0113a2eb023b9ccc04542d34f0773ed4379bad4056090a17dce666a
+0b08011bd605ec68f5260f74caddc97d248c323833784d3ba37d7cadcfcbebdb341f15cb5ff41668d3a167b1b7ba8423946cfd2c7ee38cc8424a4077ade495b1
