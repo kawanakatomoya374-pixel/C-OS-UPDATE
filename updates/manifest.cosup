@@ -1,8 +1,8 @@
 COSUP 1
 channel stable
-serial 1793566902
-os version=4.1.0-r30 notes=Linux_window_reconnects_to_a_slow_X_server,_crash_report_lists_memory_calls,_boot_animation_easter_egg
-item name=Terminal version=7 path=/bin/Terminal.c-os sha256=e5ec0af1dccc628e83b83f17b964a9cfe40eb823eaca542e98ad6ec388260f1c size=370152 file=Terminal-7.bin
+serial 1793605729
+os version=4.1.0-r31 notes=Hardware_cursor_on_the_2D_GPU,_Terminal_runs_Linux_commands_by_name_(git,_curl),_lighter_system_call_path,_installer_records_packs_for_the_store
+item name=Terminal version=8 path=/bin/Terminal.c-os sha256=44ac73bc9ed88d27e828844f25f84c8a4b551c3c6fcdafb368ac9c49f20692b9 size=370224 file=Terminal-8.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
 item name=TinyCC version=4 path=/bin/tcc.c-os sha256=d4be2d2095c15f97ec1b50f75614a9c514e8399c8b836a1c54ea501d43d3a49a size=446240 file=TinyCC-4.bin
@@ -18,7 +18,7 @@ item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08f
 item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556c4267216d945f46155f61e9afd809b75d4480ccd size=1136784 file=Sprint-2.bin
 item name=CosApps version=4 path=/apps/cosapps/CosApps.sp sha256=1534807c4c03935dbc3ddb9c30f7d3c8042ee0d9b58c69c2d9ecd25e0a96b2c2 size=14299 file=CosApps-4.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
-item name=LinuxInstall version=2 path=/apps/linux/LinuxInstall.c-os sha256=b7f01dcd804a83eda036a5e0f9516d2195d7091ac25cbbca99582e26b8267e66 size=124880 file=LinuxInstall-2.bin
-kernel serial=1793566766 sha256=fd25fbe04d3c67a179977b83f8b2fd37467146a219c8fd804a7257950eb322d2 size=30163666 parts=4 file=Kernel-1793566766 label=X_reconnect,_diagnostics,_boot_joke
+item name=LinuxInstall version=3 path=/apps/linux/LinuxInstall.c-os sha256=c88754638c25bb9189ffb665176d58c2f9fe7027b297026c7f40c225906aa8b9 size=124880 file=LinuxInstall-3.bin
+kernel serial=1793605005 sha256=af18219cf2c623df9a813ca92bfa5a2c6b6418110c4da88867fdb786b8be749e size=30165732 parts=4 file=Kernel-1793605005 label=Hardware_cursor,_Linux_commands_in_the_Terminal,_syscall_path
 --SIG--
-74bb652d3190baabfe35dc2d4669e35a06b02a0a4095c37494d3f62ba3c354add315bf1de3d54a5459622f3c8c2dcf1224329146551d59af8703dfba63ef0283
+9fa8a8473044f4b46083dc1614a3c824b20bf62f8f0d1539a5270c4cff05b36f9dd778c8098dbd4a1bbbe423f276929eac1bed04d57221a2784e80ef4286fc9f
