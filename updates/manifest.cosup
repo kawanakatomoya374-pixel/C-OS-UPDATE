@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1793805339
-os version=4.1.0-r35 notes=SMP:_user_programs_run_on_all_CPUs_(stat,_munmap,_poll,_read/write_without_the_big_lock),_file_read_cache,_symlink(),_rt_sigsuspend,_SysV_shm,_many_more_Linux_system_calls,_bigger_programs_(GCC_14)_and_longer_command_lines;_the_mouse_pointer_is_drawn_by_the_software_cursor_again_on_the_plain_virtio-gpu
+serial 1793830672
+os version=4.1.0-r36 notes=make_-j_works_(SA_RESTART,_shared_file_descriptors_after_fork,_signal_races),_a_process_that_exited_stays_a_zombie,_a_kernel_stack_fault_under_a_private-low_directory_is_repaired,_LinuxInstall_adds_a_pack's_links_to_the_earlier_packs'_instead_of_replacing_them,_GCC_14_runs_(symlink,_big_programs)
 item name=Terminal version=8 path=/bin/Terminal.c-os sha256=44ac73bc9ed88d27e828844f25f84c8a4b551c3c6fcdafb368ac9c49f20692b9 size=370224 file=Terminal-8.bin
 item name=Files version=7 path=/bin/files.c-os sha256=d8311f0f1cadcfeda7b3dd48947c75556f3f2af853ded15258ba24159bd83434 size=404272 file=Files-7.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -18,7 +18,7 @@ item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08f
 item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556c4267216d945f46155f61e9afd809b75d4480ccd size=1136784 file=Sprint-2.bin
 item name=CosApps version=5 path=/apps/cosapps/CosApps.sp sha256=0f46025e349b295d120856b789070152149f2053397a3728b1bad906fe93d9dc size=15015 file=CosApps-5.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
-item name=LinuxInstall version=4 path=/apps/linux/LinuxInstall.c-os sha256=f141a90b6b18834771af320741536b0c1e145c3ac9354df516181e817a233e5d size=124880 file=LinuxInstall-4.bin
-kernel serial=1793802183 sha256=3ff9b6359a59dc32e81988fbb6aed7a906ff8c59fc62971e309160159fc6d647 size=30178234 parts=4 file=Kernel-1793802183 label=r35_SMP
+item name=LinuxInstall version=5 path=/apps/linux/LinuxInstall.c-os sha256=c9c95f154dcad5fc4bc9976f661bd8d90f5fc9596dfcacf66c60df9f2f1cf6c5 size=129008 file=LinuxInstall-5.bin
+kernel serial=1793830259 sha256=1f20c61e141bb049f0afcff0530b3b68d99dd0283987ca8ee8b4040f90d6eb19 size=30176412 parts=4 file=Kernel-1793830259 label=r36_make_-j_and_GCC
 --SIG--
-409c73b201f51e49396b2d6c7796391fc4930b6b94ae6e8ff91279c93ecb50da346f5bee5d9d8b5c3e0833edd947dfbbe5d9e10b0b3b9f629c42c56cebb46dd7
+f9fa2bd461685b9f58cc508e55d06f99fdc34fbbf473e80a41c51dff372ab96b8427f3b1e189f0348b315971f2f62efa0db1f643d3f4eb26e89b5466daa1ab05
