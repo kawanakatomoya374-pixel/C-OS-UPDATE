@@ -1,7 +1,7 @@
 COSUP 1
 channel stable
-serial 1794245739
-os version=4.1.0-r37 notes=a_thread-safe_Linux_layer,_X_images_through_shared_memory,_smaller_kernel_and_256_MB_RAM,_C-OS_Browser_support
+serial 1794263717
+os version=4.1.0-r38 notes=kernel_work:_futex_and_wake-up_IPIs_without_the_big_kernel_lock_(about_1.5-2x_faster_page_drawing),_C-OS_Browser_support
 item name=Terminal version=8 path=/bin/Terminal.c-os sha256=44ac73bc9ed88d27e828844f25f84c8a4b551c3c6fcdafb368ac9c49f20692b9 size=370224 file=Terminal-8.bin
 item name=Files version=8 path=/bin/files.c-os sha256=f0b40bafc2282463c625f3d7ae9916b84c5abb2d231dea6154c9a06deab273b6 size=404216 file=Files-8.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -19,6 +19,6 @@ item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556
 item name=CosApps version=5 path=/apps/cosapps/CosApps.sp sha256=0f46025e349b295d120856b789070152149f2053397a3728b1bad906fe93d9dc size=15015 file=CosApps-5.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
 item name=LinuxInstall version=5 path=/apps/linux/LinuxInstall.c-os sha256=c9c95f154dcad5fc4bc9976f661bd8d90f5fc9596dfcacf66c60df9f2f1cf6c5 size=129008 file=LinuxInstall-5.bin
-kernel serial=1794245689 sha256=ddeaac9e3eacff3999552beb431bba6d7399906ec0227abf6fcd68f1e7bfe1e9 size=30561732 parts=4 file=Kernel-1794245689 label=r37:_thread-safe_Linux_layer,_MIT-SHM
+kernel serial=1794263656 sha256=b9ac1eec54b76947558d6e791d7c283764863239b0d4265c358d9fdb56632a97 size=30564599 parts=4 file=Kernel-1794263656 label=r38:_less_big-kernel-lock_use
 --SIG--
-ef49d17f72732f4bb20498ff093c82253d4e19d67cf0368f714266f50fbe10a974391b572349b8548aebcf3a5b3283755d0672dd38e52cd60b076e47444ef643
+4d47cc79f4e5b8d002f9ace7fcf5fafe4b94c41070ab8156786810f196b0af0e9b12fd538ebbf86f194778d1b190e26480506d2d9a6bc89340784c4e25703cd5
