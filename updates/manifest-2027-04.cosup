@@ -4,13 +4,13 @@ serial 1806537600
 issued 1806537600
 expires 1810425600
 keyset-epoch 1
-os version=4.1.0-r41 notes=Faster_Linux_apps_and_video_(fewer_kernel_lock_waits),_monthly_update_lists,_/proc/stat
-item name=Terminal version=8 path=/bin/Terminal.c-os sha256=44ac73bc9ed88d27e828844f25f84c8a4b551c3c6fcdafb368ac9c49f20692b9 size=370224 file=Terminal-8.bin
-item name=Files version=8 path=/bin/files.c-os sha256=f0b40bafc2282463c625f3d7ae9916b84c5abb2d231dea6154c9a06deab273b6 size=404216 file=Files-8.bin
-item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
+os version=4.1.0-r42 notes=AI_assistant_(Ctrl+Shift+A_glass_panel,_chat,_C-OS_Studio_integration),_taskbar_IME_chip_and_tray_plugins,_all_r41_changes
+item name=Terminal version=9 path=/bin/Terminal.c-os sha256=a6e1ea1c511d8292c407731a7f947a9ea10809eb9d700a1c31ca295b417edff2 size=378488 file=Terminal-9.bin
+item name=Files version=9 path=/bin/files.c-os sha256=a77f9b9192b2eb30e94b9336593942aeabd1b3d488aa52c725a39483a534b691 size=404288 file=Files-9.bin
+item name=Py2C version=7 path=/bin/Py2C.c-os sha256=f564626d3fe07969a826b8016e15fa5e9a88bffd0d651480eceb1277fb4b0899 size=828088 file=Py2C-7.bin
 item name=TinyCC version=4 path=/bin/tcc.c-os sha256=d4be2d2095c15f97ec1b50f75614a9c514e8399c8b836a1c54ea501d43d3a49a size=446240 file=TinyCC-4.bin
 item name=Archive version=5 path=/bin/cosarc.c-os sha256=5a9071dbfe41823b8481aa3c0f24f425af8844eeb808ad32e5b245bb88ce9661 size=130768 file=Archive-5.bin
-item name=Studio version=4 path=/bin/studio.c-os sha256=ba35641976bfee10d481ea9176bfd7ad815acd9c401994e746aa86089a29aedb size=473312 file=Studio-4.bin
+item name=Studio version=5 path=/bin/studio.c-os sha256=23172249d6f448e015941c17179630da3c3c8daa084956b9a2a8d333898a4f76 size=880968 file=Studio-5.bin
 item name=Music version=4 path=/bin/music.c-os sha256=0b1aacfd6420d3438d0bcb9bc7ef8d4f2271bf228cec3a5feaa2af854fc20d06 size=290840 file=Music-4.bin
 item name=Media version=5 path=/bin/Media.c-os sha256=6dd6858c0da624c9fed09382282ef30bbeb74b4f9dfaa70153d0f62928c69617 size=6297544 file=Media-5.bin
 item name=Photo version=4 path=/bin/Photo.c-os sha256=af01a123c5f4bf21ced1805b3f417032053f968603a6013e5dc326cc35311a8c size=193144 file=Photo-4.bin
@@ -22,8 +22,7 @@ item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556
 item name=CosApps version=5 path=/apps/cosapps/CosApps.sp sha256=0f46025e349b295d120856b789070152149f2053397a3728b1bad906fe93d9dc size=15015 file=CosApps-5.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
 item name=LinuxInstall version=5 path=/apps/linux/LinuxInstall.c-os sha256=c9c95f154dcad5fc4bc9976f661bd8d90f5fc9596dfcacf66c60df9f2f1cf6c5 size=129008 file=LinuxInstall-5.bin
-kernel serial=1794408764 sha256=9d1b2a406c4797216dbdf1bd4bd34a5c311f32a04de509042243bfea4c76fcc6 size=30571925 parts=4 file=Kernel-1794408764 label=4.1.0-r41
+kernel serial=1794429323 sha256=3242c96c4d50ca96a64751d8f8fa88ad21b2ac7c59fd42e32ba6f313fcd23e16 size=31140986 parts=4 file=Kernel-1794429323 label=4.1.0-r42
 --SIG--
-45bca65c022f7398e64188937edba30ef97b30a22ed93112c81abc830388a7d9d7198eecbcb59c7caabb1a5daf5a724aedbc53c677c7b57a4c85c8dc1a538660
---SIG2-- u1 f4a11b4b6b80f905ec7583249c5d948fa803ed73fcea83409eb179f6e7f901c3f21092af1c93b9eef5660c60a6103ab00a756a03051d25a826f4e462c9c6d14e
---SIG2-- u2 2ce944ad0679b087877f9841790a095a3ccb1a0dbded517111862e28652e5fb1f85dadf33c78bf870b2a5ee801ad8e7a498689648f415b5e763fb03001338088
+dbbfb034bb4bb3f6541ed690c0cd4dc12cd6e13861f91430957fa00671790f550255c9435779d9051b519cf5328347214b2ab1266a944e63a98444d15a75ee94
+--SIG2-- u1 2ed7b349765ab5a756f9980395988974d12afe2090c5605bf3bf4b04d6e461aa16dbd373df1cde2b83c70ad3b3128c2cb106ccc4abe1f3b0435d28ba97a6c0a7
