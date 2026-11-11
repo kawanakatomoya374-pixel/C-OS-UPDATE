@@ -1,10 +1,10 @@
 COSUP 1
 channel stable
-serial 1794327732
-issued 1794327732
-expires 1796919732
+serial 1794408829
+issued 1794408829
+expires 1798296829
 keyset-epoch 1
-os version=4.1.0-r40 notes=key_sets_and_two_signatures_for_updates_(milestone_M1);_the_old_single_signature_still_works
+os version=4.1.0-r41 notes=Faster_Linux_apps_and_video_(fewer_kernel_lock_waits),_monthly_update_lists,_/proc/stat
 item name=Terminal version=8 path=/bin/Terminal.c-os sha256=44ac73bc9ed88d27e828844f25f84c8a4b551c3c6fcdafb368ac9c49f20692b9 size=370224 file=Terminal-8.bin
 item name=Files version=8 path=/bin/files.c-os sha256=f0b40bafc2282463c625f3d7ae9916b84c5abb2d231dea6154c9a06deab273b6 size=404216 file=Files-8.bin
 item name=Py2C version=6 path=/bin/Py2C.c-os sha256=2c0dcaf35372b4f6b57646c55f9b54a91e3f628ac075f2877fcde5ac4488c889 size=828016 file=Py2C-6.bin
@@ -14,7 +14,7 @@ item name=Studio version=4 path=/bin/studio.c-os sha256=ba35641976bfee10d481ea91
 item name=Music version=4 path=/bin/music.c-os sha256=0b1aacfd6420d3438d0bcb9bc7ef8d4f2271bf228cec3a5feaa2af854fc20d06 size=290840 file=Music-4.bin
 item name=Media version=5 path=/bin/Media.c-os sha256=6dd6858c0da624c9fed09382282ef30bbeb74b4f9dfaa70153d0f62928c69617 size=6297544 file=Media-5.bin
 item name=Photo version=4 path=/bin/Photo.c-os sha256=af01a123c5f4bf21ced1805b3f417032053f968603a6013e5dc326cc35311a8c size=193144 file=Photo-4.bin
-item name=Updater version=6 path=/bin/cosupdate.c-os sha256=31b4b44b5f5fb3285b140a4350ca9311dade9f7cf1753429f97a76ed801a71fc size=137456 file=Updater-6.bin
+item name=Updater version=7 path=/bin/cosupdate.c-os sha256=d16d32dcced303f30dbb07fe2e77eb227294054af98d15ce22552d82bc0ade17 size=137392 file=Updater-7.bin
 item name=MessageServer version=4 path=/bin/CosMsgServer.c-os sha256=3ff62fa068675709c51251358cc655a47ee139149326bf1926e30284c96c575d size=423384 file=MessageServer-4.bin
 item name=Py2CCli version=4 path=/bin/python-code-to-c.c-os sha256=a7b156f5337729ddbfc54890d053410f834005db7a624dadcedfde137d69b9f0 size=933800 file=Py2CCli-4.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
@@ -22,8 +22,7 @@ item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556
 item name=CosApps version=5 path=/apps/cosapps/CosApps.sp sha256=0f46025e349b295d120856b789070152149f2053397a3728b1bad906fe93d9dc size=15015 file=CosApps-5.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
 item name=LinuxInstall version=5 path=/apps/linux/LinuxInstall.c-os sha256=c9c95f154dcad5fc4bc9976f661bd8d90f5fc9596dfcacf66c60df9f2f1cf6c5 size=129008 file=LinuxInstall-5.bin
-kernel serial=1794327664 sha256=60b83858cb11a531f7d85090841998f434601114140ed14d1e4bd6f218489f1c size=30572732 parts=4 file=Kernel-1794327664 label=r40:_key_sets_(M1)
+kernel serial=1794408764 sha256=9d1b2a406c4797216dbdf1bd4bd34a5c311f32a04de509042243bfea4c76fcc6 size=30571925 parts=4 file=Kernel-1794408764 label=4.1.0-r41
 --SIG--
-7b5547ef1bd53cdb30a5dae5830b8f22cfe254de88b49f8ba7fe0aa4d759ba23d58966074e078e82517db5937ff5dbb05d785187970d26e38cee13a2ce3d5d4c
---SIG2-- u1 4a394e1fe1d0c8b7c913019eb83e63a62f422e42616d3c6df416f4afbdf69761ea4b1bdd48051daedc9c1fbb8c3b9a0814b9a7cca92fdc8fe944b620a10b9151
---SIG2-- u2 1c2e89614e7dc1a26056f12efb01a3a6dba4564f0e47b1ef2bea7032dbd911930d855bb7e93f43ea29c6b57f01b192e529e0eb31b37531a07387a0f1f36f1855
+a960eb176028ef62f027cf14acb57b0016a9d3df97fb70b327e429a5a557fb639b94eeaeb3580690222fa987d3519a2f330de9386b4bccb70de5e981b1da7546
+--SIG2-- u1 468561e92a2d1c6ec7b2a1867a03a8ea07666c5e999503222cb9639821995a14eef6bfd614693a77d9e3bab09935a0690ae0db6ef67c41f778e3d2cbaf9f81f5
