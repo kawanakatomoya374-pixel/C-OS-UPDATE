@@ -4,26 +4,25 @@ serial 1806537600
 issued 1806537600
 expires 1810425600
 keyset-epoch 1
-os version=4.1.0-r42 notes=AI_assistant_(Ctrl+Shift+A_glass_panel,_chat,_C-OS_Studio_integration),_taskbar_IME_chip_and_tray_plugins,_all_r41_changes
-item name=Terminal version=9 path=/bin/Terminal.c-os sha256=a6e1ea1c511d8292c407731a7f947a9ea10809eb9d700a1c31ca295b417edff2 size=378488 file=Terminal-9.bin
-item name=Files version=9 path=/bin/files.c-os sha256=a77f9b9192b2eb30e94b9336593942aeabd1b3d488aa52c725a39483a534b691 size=404288 file=Files-9.bin
-item name=Py2C version=7 path=/bin/Py2C.c-os sha256=f564626d3fe07969a826b8016e15fa5e9a88bffd0d651480eceb1277fb4b0899 size=828088 file=Py2C-7.bin
-item name=TinyCC version=4 path=/bin/tcc.c-os sha256=d4be2d2095c15f97ec1b50f75614a9c514e8399c8b836a1c54ea501d43d3a49a size=446240 file=TinyCC-4.bin
-item name=Archive version=5 path=/bin/cosarc.c-os sha256=5a9071dbfe41823b8481aa3c0f24f425af8844eeb808ad32e5b245bb88ce9661 size=130768 file=Archive-5.bin
-item name=Studio version=5 path=/bin/studio.c-os sha256=23172249d6f448e015941c17179630da3c3c8daa084956b9a2a8d333898a4f76 size=880968 file=Studio-5.bin
-item name=Music version=4 path=/bin/music.c-os sha256=0b1aacfd6420d3438d0bcb9bc7ef8d4f2271bf228cec3a5feaa2af854fc20d06 size=290840 file=Music-4.bin
-item name=Media version=5 path=/bin/Media.c-os sha256=6dd6858c0da624c9fed09382282ef30bbeb74b4f9dfaa70153d0f62928c69617 size=6297544 file=Media-5.bin
-item name=Photo version=4 path=/bin/Photo.c-os sha256=af01a123c5f4bf21ced1805b3f417032053f968603a6013e5dc326cc35311a8c size=193144 file=Photo-4.bin
-item name=Updater version=7 path=/bin/cosupdate.c-os sha256=d16d32dcced303f30dbb07fe2e77eb227294054af98d15ce22552d82bc0ade17 size=137392 file=Updater-7.bin
-item name=MessageServer version=4 path=/bin/CosMsgServer.c-os sha256=3ff62fa068675709c51251358cc655a47ee139149326bf1926e30284c96c575d size=423384 file=MessageServer-4.bin
-item name=Py2CCli version=4 path=/bin/python-code-to-c.c-os sha256=a7b156f5337729ddbfc54890d053410f834005db7a624dadcedfde137d69b9f0 size=933800 file=Py2CCli-4.bin
+os version=4.1.0-r43 notes=Terminal_full-screen_mode_(pseudo_terminals:_vi,_python,_node,_Claude_Code),_AI_assistant_work_folder_and_commands_with_approval,_web_search,_Linux_layer_fixes
+item name=Terminal version=10 path=/bin/Terminal.c-os sha256=2abc6a67178901ddb04b89fb7ffc5a94bcfe23681f975a384487dbf1644c6e3e size=392272 file=Terminal-10.bin
+item name=Files version=10 path=/bin/files.c-os sha256=5bf1fe8a0522e448a5575c447ee16be516c6427a222f1a53a1433112f5e90bc3 size=404472 file=Files-10.bin
+item name=Py2C version=8 path=/bin/Py2C.c-os sha256=a4b0888f848c74a7de081be83054b68fadc2097d80386cdcb5563b29e23d6d92 size=828272 file=Py2C-8.bin
+item name=TinyCC version=5 path=/bin/tcc.c-os sha256=a275b2bb2acb0474e1dff7b44dfb1e1b0957df5675ae2723f42270b94974190d size=446424 file=TinyCC-5.bin
+item name=Archive version=6 path=/bin/cosarc.c-os sha256=3c6e73da098865926d5e57efd3fb50cd98a8e796c55d2a1f50e778e85a907f90 size=130952 file=Archive-6.bin
+item name=Studio version=6 path=/bin/studio.c-os sha256=ef945b950ec49ce9d69cc52cfe6ea70b7bcc1987a079523569e43891751234ea size=894648 file=Studio-6.bin
+item name=Music version=5 path=/bin/music.c-os sha256=7e01e59871b7dcd3da279809ca0e99111599fd8154ecf67eded44f6cc546cbba size=291032 file=Music-5.bin
+item name=Media version=6 path=/bin/Media.c-os sha256=624042529172c5bf240a62cd402a3bc061dfcd4d53775e5d9dc29d0852c03bcf size=6297728 file=Media-6.bin
+item name=Photo version=5 path=/bin/Photo.c-os sha256=9cc08bd2103581d830ad5c7c3ec2eb3068e981848c6539f34b3162a540ec840a size=193328 file=Photo-5.bin
+item name=Updater version=8 path=/bin/cosupdate.c-os sha256=7fa399e30c0c98d8e77cbf7f4e3fa6873b4f43e46959eba2292d467aac353690 size=137576 file=Updater-8.bin
+item name=MessageServer version=5 path=/bin/CosMsgServer.c-os sha256=bd74a1031bd5adc02c521b103643528555f7ff42f70d35b110037321f17061d3 size=423568 file=MessageServer-5.bin
+item name=Py2CCli version=5 path=/bin/python-code-to-c.c-os sha256=3f38761ea6b02df35f458a67c8e60995ed699e9112441c5f91c0246f880a3d9d size=933984 file=Py2CCli-5.bin
 item name=LangJa version=1 path=/system/lang/ja.c-osll sha256=cf7fd95e8f4573e08ffb0bd2beceead9bf9d68001c5a05e26a7527b78089c5b6 size=83240 file=LangJa-1.bin
-item name=Sprint version=2 path=/bin/sprint.c-os sha256=4f3ee8f6ae652a83271e0556c4267216d945f46155f61e9afd809b75d4480ccd size=1136784 file=Sprint-2.bin
+item name=Sprint version=3 path=/bin/sprint.c-os sha256=cb9d0298b24938a390f29325cc5b5c7e894c5474853bea8fd635add4a9463bf5 size=1136968 file=Sprint-3.bin
 item name=CosApps version=5 path=/apps/cosapps/CosApps.sp sha256=0f46025e349b295d120856b789070152149f2053397a3728b1bad906fe93d9dc size=15015 file=CosApps-5.bin
 item name=Launcher version=1 path=/apps/launcher/Launcher.sp sha256=e2b69f5a42c86403188c45b0d08412c9f327d7f6c933b9ccc42c36f04b52e539 size=12067 file=Launcher-1.bin
-item name=LinuxInstall version=5 path=/apps/linux/LinuxInstall.c-os sha256=c9c95f154dcad5fc4bc9976f661bd8d90f5fc9596dfcacf66c60df9f2f1cf6c5 size=129008 file=LinuxInstall-5.bin
-kernel serial=1794429323 sha256=3242c96c4d50ca96a64751d8f8fa88ad21b2ac7c59fd42e32ba6f313fcd23e16 size=31140986 parts=4 file=Kernel-1794429323 label=4.1.0-r42
+item name=LinuxInstall version=6 path=/apps/linux/LinuxInstall.c-os sha256=907517643519ea3c4a95adfe6049481f4b0fe28ae5f7808f39b5cd877c1955cd size=129192 file=LinuxInstall-6.bin
+kernel serial=1794501043 sha256=8eee0c722bcb6d450bed53ce69590676fe04762740253b21e775b18810bc26fb size=31197146 parts=4 file=Kernel-1794501043 label=4.1.0-r43
 --SIG--
-dbbfb034bb4bb3f6541ed690c0cd4dc12cd6e13861f91430957fa00671790f550255c9435779d9051b519cf5328347214b2ab1266a944e63a98444d15a75ee94
---SIG2-- u1 2ed7b349765ab5a756f9980395988974d12afe2090c5605bf3bf4b04d6e461aa16dbd373df1cde2b83c70ad3b3128c2cb106ccc4abe1f3b0435d28ba97a6c0a7
---SIG2-- u2 4ba339b7c13739bbb58d1e8488d7bb395bab282eeaed74f488a68f5f667d5b211e8a2eb71167dccc28130879a27c3635c2f31f5bc5bd5a6ea229dafdc37804c7
+ccbe377d9782d6cf950433a138a89bf81f3607b98b05a9ec0f0f433647e647c443642f49dab7da928db6e7427df81bf4001ebaa5e5e46980b7278355859729c2
+--SIG2-- u1 8046cb81c39d8c65b1a48af62ccd0f253ea8673c17871c78e66c81e91f27c014a566eca879952d2026ae4ea1566d1634d2bb81296ec340f4a992cabc0086fe2a
